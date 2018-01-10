@@ -8,6 +8,7 @@ this repo holds sam's attempts to dive into game design.
 - i am a videogame looser. i prefer wandering around.
 
 **On TANKS!**
+
 *General comments on current state*
 - the map feels too big for me, i wish it was more intimate. it feels dry, not because of the desert context.
 - the only light is a directional light acting as a sun. 
@@ -16,6 +17,7 @@ this repo holds sam's attempts to dive into game design.
 - why can you get more than one life?
 
 *General comments on future states*
+
 What if..
 - the map consisted in little platforms separated from each other. movements would be irrelevant. 
 - the lights were stroboscopic like in a night club.
