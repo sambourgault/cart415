@@ -9,7 +9,8 @@ public class GameManager : MonoBehaviour
     public float m_StartDelay = 3f;         
     public float m_EndDelay = 3f;           
     public CameraControl m_CameraControl;   
-    public Text m_MessageText;              
+    public Text m_MessageText;     
+	public Text m_MessageText2;
     public GameObject m_TankPrefab;         
     public TankManager[] m_Tanks;           
 
@@ -96,6 +97,9 @@ public class GameManager : MonoBehaviour
 
 		m_RoundNumber++;
 		m_MessageText.text = "ROUND " + m_RoundNumber;
+		// NEW
+		// remove subtitle
+		m_MessageText2.text = string.Empty;
 
 		yield return m_StartWait;
 
