@@ -1,7 +1,16 @@
 # cart415 - PROCESS JOURNAL
 this repo holds sam's attempts to dive into game design.
 
-## Jan 9th, 2018
+## Jan 12th, 2018: First intervention
+
+I just submit a first intervention for TANKS!, in which instead of shooting at each other, the tanks are thanking each other. Starting with a casual "thank you!", they start arguing about who is thanking whom. In the end, the tanks are fighting again, with words this time. 
+
+It reminds me of Jean-Paul Sartre's scenario "L'Engrenage" or Albert Camus's play "Les Justes", which both discuss an authoritarian political climate that revolutionaries try to change by force. But once in power, they end up reproducing the same patterns that they were fighting against not long ago.
+
+I developed it quickly thinking, first, that I would replace the shells, because i have no interest in war/shooting games and, second, that the pun on "tanks" and "thanks" was funny enough to exploit.
+
+
+## Jan 9th, 2018 : First thoughts on TANKS!
 
 - the yellow color of the desert is now flooding my screen. everything is working except the dust trails that resemble more to a grandpa coughing than anything else.
 - i suck at driving a tank. i can figure out why i never got my license.
