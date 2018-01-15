@@ -100,13 +100,18 @@ public class TankShooting : MonoBehaviour
 		// check if the other tank as answered also before changing the message
 		if (m_Bubble == null) {
 			m_CounterBubble++;
-			if (m_CounterBubble > 6 && m_OtherTank.m_CounterBubble > 6) {
+			if (m_CounterBubble > 12 && m_OtherTank.m_CounterBubble > 12) {
+				m_Bubble = Instantiate (m_BubblePrefab4, new Vector3 (transform.position.x - 1.5f, transform.position.y + 5.0f, transform.position.z + 1.5f), m_BubbleRotation) as GameObject;
+				m_Bubble.transform.parent = gameObject.transform;
+
+			} else if (m_CounterBubble > 8 && m_OtherTank.m_CounterBubble > 8) {
 				m_Bubble = Instantiate (m_BubblePrefab3, new Vector3 (transform.position.x - 1.5f, transform.position.y + 5.0f, transform.position.z + 1.5f), m_BubbleRotation) as GameObject;
 				m_Bubble.transform.parent = gameObject.transform;
 
-			} else if (m_CounterBubble > 4 && m_OtherTank.m_CounterBubble > 4) {
+			} else if (m_CounterBubble > 3 && m_OtherTank.m_CounterBubble > 3) {
 				// adding variation in the answer of the tanks
 				float r = Random.Range (0.0f, 1.0f);
+				Debug.Log (r);
 				if (r > 0.5f) {
 					m_Bubble = Instantiate (m_BubblePrefab3, new Vector3 (transform.position.x - 1.5f, transform.position.y + 5.0f, transform.position.z + 1.5f), m_BubbleRotation) as GameObject;
 					m_Bubble.transform.parent = gameObject.transform;
@@ -114,11 +119,6 @@ public class TankShooting : MonoBehaviour
 					m_Bubble = Instantiate (m_BubblePrefab2, new Vector3 (transform.position.x - 1.5f, transform.position.y + 5.0f, transform.position.z + 1.5f), m_BubbleRotation) as GameObject;
 					m_Bubble.transform.parent = gameObject.transform;
 				}
-
-			} else if (m_CounterBubble > 1  && m_OtherTank.m_CounterBubble > 1) {
-				m_Bubble = Instantiate (m_BubblePrefab2, new Vector3 (transform.position.x - 1.5f, transform.position.y + 5.0f, transform.position.z + 1.5f), m_BubbleRotation) as GameObject;
-				m_Bubble.transform.parent = gameObject.transform;
-
 			} else if (m_CounterBubble >= 0  && m_OtherTank.m_CounterBubble >= 0) {
 				m_Bubble = Instantiate (m_BubblePrefab, new Vector3 (transform.position.x - 1.5f, transform.position.y + 5.0f, transform.position.z + 1.5f), m_BubbleRotation) as GameObject;
 				m_Bubble.transform.parent = gameObject.transform;
