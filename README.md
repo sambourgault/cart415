@@ -1,9 +1,23 @@
 # cart415 - PROCESS JOURNAL
 this repo holds sam's attempts to dive into game design.
 
+## Jan 22th, 2018: Still brainstroming for ideas
+
+I ended up pushing further Prototype 1 (Traffic) and Prototype 4 (Volte-Face).
+
+Prototype 1: You are a camera located on a tanks highway but you are stuck in traffic. Your ability to pierce the most solid carcass with your sight lets you see inside the tanks that are moving slowly towards an end. This prototype strives to discover the humanity within the metal frame of the destroying machine. It could be pushed further by adding conversation between the pilots of the tanks.
+
+Prototype 2: You play a casual shooting game, but when you die your tank soul leaves your tank body and starts moving around.
+
+Prototype 3: You are a tank and you try to find tank buddies to play with you, but every tank is busy.
+
+Prototype 4: You are the camera and you zoom inside the tank’s barrel. You discover the inner side of the tank, with all its vulnerability. There is a close relationship between the camera and the gun since they have shared similar features in their early developments. This affiliation explains the use of the expression “shooting” to describe the operation of both tools. So what happens if the camera is shooting the tank’s turret? Is it history revolving? This prototype is an infinite zoom through the tank past, present and future.
+
+Prototype 5: You are a camera and you move through walls in order to see the tank intimacy, what are they doing when human are not playing the TANKS! game?
+
 ## Jan 21th, 2018: Ideas for first prototypes
 
-** Ideas **
+**Ideas**
 
 *CAMERA*
 - photo montage like La Jetee.
