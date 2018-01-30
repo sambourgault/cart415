@@ -52,17 +52,21 @@
      <Compile Include="Assets\Scripts\Camera\CameraControl_traffic.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraControl_void.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraControl_zoom.cs" />
+     <Compile Include="Assets\Scripts\Managers\CameraManager_mother.cs" />
      <Compile Include="Assets\Scripts\Managers\DontDestroy.cs" />
      <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\GameManager_mother.cs" />
      <Compile Include="Assets\Scripts\Managers\GameManager_void.cs" />
      <Compile Include="Assets\Scripts\Managers\SwitchScene.cs" />
      <Compile Include="Assets\Scripts\Managers\SwitchScene1.cs" />
      <Compile Include="Assets\Scripts\Managers\TankManager.cs" />
      <Compile Include="Assets\Scripts\Shell\ShellExplosion.cs" />
+     <Compile Include="Assets\Scripts\Tank\TankCircle.cs" />
      <Compile Include="Assets\Scripts\Tank\TankHealth.cs" />
      <Compile Include="Assets\Scripts\Tank\TankMovement.cs" />
      <Compile Include="Assets\Scripts\Tank\TankMovement1.cs" />
      <Compile Include="Assets\Scripts\Tank\TankShooting.cs" />
+     <Compile Include="Assets\Scripts\Tank\TankTowardsGod.cs" />
      <Compile Include="Assets\Scripts\UI\UIDirectionControl.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\TutorialInfo.cs" />
      <Compile Include="Assets\_Completed-Assets\Scripts\Camera\CameraControl.cs" />
@@ -142,9 +146,6 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
- <Reference Include="UnityEngine.Purchasing">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
@@ -156,9 +157,6 @@
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>

@@ -1,17 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Camera/CameraControl_zoom.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Tank/TankTowardsGod.cs">
     <Files>
-      <File FileName="Assets/Scripts/Camera/CameraControl.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Camera/CameraControl_zoom.cs" Line="77" Column="17" />
-      <File FileName="Assets/Scripts/Camera/CameraControl_traffic.cs" Line="9" Column="2" />
+      <File FileName="Assets/Scripts/Tank/TankTowardsGod.cs" Line="47" Column="43" />
+      <File FileName="Assets/Scripts/Managers/CameraManager_mother.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Tank/TankMovement1.cs" Line="114" Column="22" />
+      <File FileName="Assets/Scripts/Tank/TankCircle.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Camera/CameraControl_void.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Managers/SwitchScene.cs" Line="29" Column="3" />
-      <File FileName="Assets/Scripts/Managers/DontDestroy.cs" Line="20" Column="5" />
-      <File FileName="Assets/SceneCounter.cs" Line="16" Column="3" />
-      <File FileName="Assets/Scripts/Managers/SwitchScene1.cs" Line="6" Column="26" />
-      <File FileName="Assets/Scripts/Camera/CameraControl1.cs" Line="18" Column="33" />
-      <File FileName="Assets/Scripts/Tank/TankMovement1.cs" Line="6" Column="31" />
+      <File FileName="Assets/Scripts/Tank/TankMovement.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

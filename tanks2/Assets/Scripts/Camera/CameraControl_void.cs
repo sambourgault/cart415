@@ -31,12 +31,19 @@ public class CameraControl_void : MonoBehaviour
 	}
 
 
+	private void Start(){
+		m_VerticalMovement = "VerticalCam";
+		m_HorizontalMovement = "HorizontalCam";
+	}
+
+
 	private void Update()
 	{
 		// Store the player's input and make sure the audio for the engine is playing.
 		// find values of two axis and store them
 		m_VerticalValue = Input.GetAxis(m_VerticalMovement);
 		m_HorizontalValue = Input.GetAxis(m_HorizontalMovement);
+
 
 		// call the function that manage the audio
 	}
@@ -46,12 +53,7 @@ public class CameraControl_void : MonoBehaviour
 	{		
 		Move();
 	}
-
-
-	private void Start(){
-		m_VerticalMovement = "VerticalCam";
-		m_HorizontalMovement = "HorizontalCam";
-	}
+		
 
 
 	private void Move(){
