@@ -1,6 +1,17 @@
 # cart415 - PROCESS JOURNAL
 this repo holds sam's attempts to dive into game design.
 
+## Jan 30th, 2018: New versions
+
+Other ideas came up while I was biking the other day. Moving my legs in circle activates my brain in a strange but recurrent way.
+
+Prototype 6: You are the camera attached to the eyes of each tank in the scene (8). You jump from one perspective to the other but you remain confused by what you see since the framing doesn't tell much about your surrounding. When you finally look at the scene from the main camera's perspective, you realized that you are attending a scene where tank babies are drinking their tank mother milk. The camera's perspective becomes the only way to fully understand what is going on.
+
+Prototype 7: You are the camera and you look at dozens of tanks. The tanks keep facing you because you are their god, their leader, and they need you. In this prototype de camera becomes the main points of attention. The passive and active roles are inverted.
+
+*A question remains, how to connect the prototypes together in a comprehensive/coherent way??*
+One option is to present the game as a series of spiritual quests for the tanks.
+
 ## Jan 22th, 2018: Still brainstroming for ideas
 
 I ended up pushing further Prototype 1 (Traffic) and Prototype 4 (Volte-Face).
