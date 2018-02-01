@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class CameraManager_mother : MonoBehaviour {
@@ -9,6 +10,7 @@ public class CameraManager_mother : MonoBehaviour {
 	private GameObject[] cameras;
 	private int currentCam;
 	private int nextCam;
+	private bool switchScene = false;
 
 	// Use this for initialization
 	void Awake() {
@@ -31,8 +33,12 @@ public class CameraManager_mother : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Time.frameCount % 100 == 0){
-			if (currentCam == cameras.Length) {
+		if (Time.frameCount % 100 == 0) {
+			
+			if (switchScene){
+				//load scene after the last camera
+				SceneManager.LoadScene ("tanks_traffic");
+			} else if (currentCam == cameras.Length) {
 				cameras [nextCam].GetComponent<Camera> ().enabled = true;
 				mainCam.enabled = false;
 
@@ -41,7 +47,7 @@ public class CameraManager_mother : MonoBehaviour {
 			} else if (currentCam == cameras.Length - 1) {
 				mainCam.enabled = true;
 				cameras [currentCam].GetComponent<Camera> ().enabled = false;
-
+				switchScene = true;
 				currentCam = cameras.Length;
 				nextCam = 0;
 			} else {

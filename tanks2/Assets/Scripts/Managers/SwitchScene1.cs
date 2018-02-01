@@ -54,6 +54,10 @@ public class SwitchScene1 : MonoBehaviour {
 			counterCactus++;
 			//if (counterScene)
 			//counterScene++;
+			// next game
+			if (counterCactus == 20){
+				SceneManager.LoadScene ("tanks_void_round");
+			}
 		}
 	}
 }

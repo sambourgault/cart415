@@ -345,19 +345,7 @@ MonoBehaviour:
   m_MessageText: {fileID: 1224338692}
   m_TankPrefab: {fileID: 1919170152013080, guid: 9f383ca11770b411fab7be3d1aae1077,
     type: 2}
-  m_Tanks:
-  - m_PlayerColor: {r: 0, g: 0, b: 0, a: 0}
-    m_SpawnPoint: {fileID: 139953397}
-    m_PlayerNumber: 0
-    m_ColoredPlayerText: 
-    m_Instance: {fileID: 0}
-    m_Wins: 0
-  - m_PlayerColor: {r: 0, g: 0, b: 0, a: 0}
-    m_SpawnPoint: {fileID: 2113588048}
-    m_PlayerNumber: 0
-    m_ColoredPlayerText: 
-    m_Instance: {fileID: 0}
-    m_Wins: 0
+  m_Tanks: []
 --- !u!4 &53404183
 Transform:
   m_ObjectHideFlags: 0
@@ -377,7 +365,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 53404181}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243131141157017676, guid: ec9af5ccd49f944228496fd7479ed244,
     type: 2}

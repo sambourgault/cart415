@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-//using UnityEngine.SceneManagement;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager_void : MonoBehaviour
@@ -32,6 +32,14 @@ public class GameManager_void : MonoBehaviour
 		// start a coroutine
         StartCoroutine(GameLoop());
     }
+
+	private void Update(){
+		// load a new scene after a certain time
+		if (Time.frameCount > 1000) {
+			SceneManager.LoadScene ("tanks_mother");
+		}
+	
+	}
 
 
     private void SpawnAllTanks()

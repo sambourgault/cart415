@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\Camera\CameraControl_void.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraControl_void1.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraControl_zoom.cs" />
+     <Compile Include="Assets\Scripts\Managers\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Managers\CameraManager_mother.cs" />
      <Compile Include="Assets\Scripts\Managers\DontDestroy.cs" />
      <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
@@ -60,6 +61,8 @@
      <Compile Include="Assets\Scripts\Managers\GameManager_void.cs" />
      <Compile Include="Assets\Scripts\Managers\SwitchScene.cs" />
      <Compile Include="Assets\Scripts\Managers\SwitchScene1.cs" />
+     <Compile Include="Assets\Scripts\Managers\SwitchScene_mother.cs" />
+     <Compile Include="Assets\Scripts\Managers\SwitchScene_traffic.cs" />
      <Compile Include="Assets\Scripts\Managers\TankManager.cs" />
      <Compile Include="Assets\Scripts\Shell\ShellExplosion.cs" />
      <Compile Include="Assets\Scripts\Tank\TankCircle.cs" />

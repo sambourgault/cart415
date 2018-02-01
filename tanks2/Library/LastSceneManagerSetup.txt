@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/tanks_mother.unity
+- path: Assets/Scenes/tanks_traffic.unity
   isLoaded: 1
   isActive: 1
