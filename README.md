@@ -1,6 +1,20 @@
 # cart415 - PROCESS JOURNAL
 this repo holds sam's attempts to dive into game design.
 
+## Jan 31th, 2018: Touch up before adding sound and gathering them
+
+Prototype 1: High highway --> I removed the second highway to simplify the visual.
+
+Prototype 4: Infinite zoom --> As you zoom in, the inner tank is surrounded by more and more cacti.
+
+Prototype 5: Enter the void --> In this world of tanks, tanks are either alone in their house turning around in circle or having sex. This is a pretty binary world but tanks know nothing else.
+
+Prototype 6: Mother --> No significant change.
+
+Prototype 7: God --> I increased the amount of tanks, so that God gets more followers.
+
+Now I must add an ambient sound to replace the horrible music that is starting to get me crazy, I might reuse it but distort it a lot. I also need some sounds for specific moments: when the tanks turn toward their god, for the vibrating tank, and for the baby tanks drinking milk from their mother tank.
+
 ## Jan 30th, 2018: New versions
 
 Other ideas came up while I was biking the other day. Moving my legs in circle activates my brain in a strange but recurrent way.

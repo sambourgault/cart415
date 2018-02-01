@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\Camera\CameraControl1.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraControl_traffic.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraControl_void.cs" />
+     <Compile Include="Assets\Scripts\Camera\CameraControl_void1.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraControl_zoom.cs" />
      <Compile Include="Assets\Scripts\Managers\CameraManager_mother.cs" />
      <Compile Include="Assets\Scripts\Managers\DontDestroy.cs" />
@@ -67,6 +68,7 @@
      <Compile Include="Assets\Scripts\Tank\TankMovement1.cs" />
      <Compile Include="Assets\Scripts\Tank\TankShooting.cs" />
      <Compile Include="Assets\Scripts\Tank\TankTowardsGod.cs" />
+     <Compile Include="Assets\Scripts\Tank\TankVibrate.cs" />
      <Compile Include="Assets\Scripts\UI\UIDirectionControl.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\TutorialInfo.cs" />
      <Compile Include="Assets\_Completed-Assets\Scripts\Camera\CameraControl.cs" />

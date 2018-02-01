@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/tanks_god.unity
+- path: Assets/Scenes/tanks_mother.unity
   isLoaded: 1
   isActive: 1

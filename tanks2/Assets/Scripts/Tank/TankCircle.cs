@@ -11,6 +11,7 @@ public class TankCircle : MonoBehaviour {
 	private Vector3 centre;
 	private float angle = 0;
 	private float yRotation = 90f;
+	private float damping;
 
 	// first function called
 	private void Awake()
@@ -21,6 +22,7 @@ public class TankCircle : MonoBehaviour {
 	private void Start()
 	{
 		centre = transform.position;
+		damping = 1f; //Random.Range(5f, 12f);
 		m_Rigidbody.MoveRotation (Quaternion.Euler(0, 90f, 0));
 	}
 
@@ -30,7 +32,7 @@ public class TankCircle : MonoBehaviour {
 		angle += RotateSpeed * Time.deltaTime;
 		//Debug.Log (angle * 180 / 3.1416f);
 
-		var offset = new Vector3(Mathf.Sin(angle), 0, Mathf.Cos(angle)) * Radius;
+		var offset = (new Vector3(Mathf.Sin(angle ), 0, Mathf.Cos(angle)) )* Radius ;
 		transform.position = centre + offset;
 
 		Vector3 radDirection = (transform.position - centre);

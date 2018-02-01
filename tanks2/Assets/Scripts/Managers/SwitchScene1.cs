@@ -6,15 +6,21 @@ using UnityEngine.SceneManagement;
 public class SwitchScene1 : MonoBehaviour {
 	public Camera m_Camera;
 	public GameObject m_Black; 
+	public GameObject m_CactusPrefab;     
 	//public SceneCounter m_Counter;
+	[HideInInspector] public GameObject[] m_Instance;  
+	private int counterCactus = 0;
 
 	private SpriteRenderer m_BlackRenderer;
+	private float initialFOV;
 	//private int counterScene;
 
 
 	// Use this for initialization
 	void Start () {
 		m_BlackRenderer = m_Black.GetComponent<SpriteRenderer> ();
+		initialFOV = m_Camera.fieldOfView;
+		m_Instance = new GameObject[20];
 		//Debug.Log ("counter: " + counterScene);
 		//counterScene = m_Counter.counter;
 	}
@@ -36,8 +42,16 @@ public class SwitchScene1 : MonoBehaviour {
 		if (m_Camera.fieldOfView <= 0.5f) {
 			//m_Counter.counter++;
 			//Debug.Log ("counter after increase:" + m_Counter.counter++);
-			SceneManager.LoadScene ("tanks_inside3");
+			//SceneManager.LoadScene ("tanks_inside3");
+			newAlpha = 1f;
+			m_BlackRenderer.color = new Color(1f, 1f, 1f, newAlpha);
+			m_Camera.fieldOfView = initialFOV;
 
+
+			m_Instance[counterCactus] = Instantiate(m_CactusPrefab, new Vector3(Random.Range(-1.5f, 1.5f), 0f, Random.Range(-2.5f, 0.5f)), Quaternion.Euler(0f, Random.Range(0f, 359f), 0f)) as GameObject;
+			float randomScale = (counterCactus+1)/7 + Random.Range (0.3f, 0.4f);
+			m_Instance [counterCactus].transform.localScale = new Vector3 (randomScale, randomScale, randomScale);
+			counterCactus++;
 			//if (counterScene)
 			//counterScene++;
 		}
