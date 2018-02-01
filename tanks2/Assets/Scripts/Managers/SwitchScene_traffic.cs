@@ -4,17 +4,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SwitchScene_traffic : MonoBehaviour {
-	public Camera m_Camera;
-	public GameObject m_Black; 
+	//public Camera m_Camera;
+	//public GameObject m_Black; 
 	//public SceneCounter m_Counter;
 
-	private SpriteRenderer m_BlackRenderer;
+	//private SpriteRenderer m_BlackRenderer;
 	//private int counterScene;
 
 
 	// Use this for initialization
 	void Start () {
-		m_BlackRenderer = m_Black.GetComponent<SpriteRenderer> ();
+		//m_BlackRenderer = m_Black.GetComponent<SpriteRenderer> ();
 		//Debug.Log ("counter: " + counterScene);
 		//counterScene = m_Counter.counter;
 	}
