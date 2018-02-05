@@ -5,7 +5,7 @@ this repo holds sam's attempts to dive into game design.
 
 The final built has been completed. I decided to include a title before each chapter. And to make WASD the only controls along the game. The audio is not destroyed with every new scene which gives a sense of continuity in this "spiritual" quest.
 
-![alt text](http://url/to/img.png) 
+![alt text](https://github.com/sambourgault/cart415/blob/master/tanks_cam.png) 
 
 ## Feb 1st, 2018: Attending background music
 
