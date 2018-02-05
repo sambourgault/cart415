@@ -2,13 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class SwitchScene : MonoBehaviour {
 	public Camera m_Camera;
 	public GameObject m_Black; 
+	public Text m_MessageText;  
+	public Image panel;
+
 	//public SceneCounter m_Counter;
 
 	private SpriteRenderer m_BlackRenderer;
+
 	//private int counterScene;
 
 
@@ -23,23 +29,22 @@ public class SwitchScene : MonoBehaviour {
 	void Update () {
 		//float newAlpha = Mathf.Lerp (0, 100, Mathf.InverseLerp (0.5f, 60f, m_Camera.fieldOfView));
 		//Debug.Log (newAlpha);
+		if (Time.frameCount > 310) {
 
-		float newAlpha = m_Camera.fieldOfView / 60f;
+			float newAlpha = m_Camera.fieldOfView / 60f;
 
 
-		m_BlackRenderer.color = new Color(1f, 1f, 1f, newAlpha);
+			m_BlackRenderer.color = new Color (1f, 1f, 1f, newAlpha);
 
-		if (Input.GetKeyDown (KeyCode.Space)) {
-			SceneManager.LoadScene ("tanks_inside2");
-		}
+			if (m_Camera.fieldOfView <= 0.5f) {
+				SceneManager.LoadScene ("tanks_inside2");
 
-		if (m_Camera.fieldOfView <= 0.5f) {
-			//m_Counter.counter++;
-			//Debug.Log ("counter after increase:" + m_Counter.counter++);
-			SceneManager.LoadScene ("tanks_inside2");
-
-			//if (counterScene)
-			//counterScene++;
-		}
+			}
+		} else if (Time.frameCount > 300 ) {
+			m_MessageText.text = string.Empty;
+		} else if (Time.frameCount > 150) {
+			panel.enabled = false;
+			m_MessageText.text = "the inside";
+		} 
 	}
 }

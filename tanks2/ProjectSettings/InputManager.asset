@@ -265,8 +265,8 @@ InputManager:
     m_Name: HorizontalCam
     descriptiveName: horizontal axis for moving camera
     descriptiveNegativeName: 
-    negativeButton: h
-    positiveButton: f
+    negativeButton: d
+    positiveButton: a
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -281,8 +281,8 @@ InputManager:
     m_Name: VerticalCam
     descriptiveName: vertical axis for moving camera
     descriptiveNegativeName: 
-    negativeButton: g
-    positiveButton: t
+    negativeButton: s
+    positiveButton: w
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -297,8 +297,8 @@ InputManager:
     m_Name: ZoomIn
     descriptiveName: Zoom inside
     descriptiveNegativeName: 
-    negativeButton: q
-    positiveButton: a
+    negativeButton: w
+    positiveButton: 
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -313,15 +313,15 @@ InputManager:
     m_Name: VerticalTraffic
     descriptiveName: Turn the camera on top of a tank
     descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: 
+    negativeButton: a
+    positiveButton: d
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
     dead: 0.001
-    sensitivity: 1
+    sensitivity: 10
     snap: 0
     invert: 0
-    type: 1
+    type: 0
     axis: 0
     joyNum: 1

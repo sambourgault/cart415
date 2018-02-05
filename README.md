@@ -1,16 +1,22 @@
 # cart415 - PROCESS JOURNAL
 this repo holds sam's attempts to dive into game design.
 
+## Feb 5th, 2018: Final built
+
+The final built has been completed. I decided to include a title before each chapter. And to make WASD the only controls along the game. The audio is not destroyed with every new scene which gives a sense of continuity in this "spiritual" quest.
+
+![alt text](http://url/to/img.png) 
+
 ## Feb 1st, 2018: Attending background music
 
 I selected a sample of the original Tanks! music soundtrack and processed it through Ableton Live and with some audio effects available on Unity (reverb and LPF). We still hear a bit of the previous melody but it is a lot more airy due to the delays.
 
 Here is the order of the games.
-1. The infinite (zoom)
+1. The infinite
 2. The void
 3. The mother
 4. The traffic
-5. The God
+5. The god
 
 I want to begin with this cool hack of the infinite zoom to set the table to what is coming next. This series of games will let the player discover the spiritual life of a tanks, starting off with its inner side. Then the player steps into the tanks everyday life, where exists only sex and loneliness. In a play of perspective, the middle chapter reveals the origin of every tanks, its mother. Following, another glimpse at inner world of tanks, this time, stuck in traffic. And finally the series ends with the player being both, the camera and God. They are now God, therefore they can stop playing whenever they want.
 

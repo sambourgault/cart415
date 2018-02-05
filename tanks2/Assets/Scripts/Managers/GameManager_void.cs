@@ -35,7 +35,11 @@ public class GameManager_void : MonoBehaviour
 
 	private void Update(){
 		// load a new scene after a certain time
-		if (Time.frameCount > 1000) {
+		if (Time.frameCount > 100){
+			m_MessageText.text = string.Empty;
+		}
+
+		if (Time.frameCount > 1100) {
 			SceneManager.LoadScene ("tanks_mother");
 		}
 	

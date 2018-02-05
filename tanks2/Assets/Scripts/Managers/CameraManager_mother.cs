@@ -1,16 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class CameraManager_mother : MonoBehaviour {
 
 	public Camera mainCam;
+	public Text m_MessageText;
 
 	private GameObject[] cameras;
 	private int currentCam;
 	private int nextCam;
 	private bool switchScene = false;
+
+	private int initialFrame;
 
 	// Use this for initialization
 	void Awake() {
@@ -30,10 +34,19 @@ public class CameraManager_mother : MonoBehaviour {
 		nextCam = 1;
 		
 	}
-	
+
+	void Start(){
+		initialFrame = Time.frameCount;
+
+	}
+
 	// Update is called once per frame
 	void Update () {
-		if (Time.frameCount % 100 == 0) {
+		if ((Time.frameCount - initialFrame) > 100){
+			m_MessageText.text = string.Empty;
+		}
+
+		if (Time.frameCount % 100 == 0 && (Time.frameCount- initialFrame)  > 101) {
 			
 			if (switchScene){
 				//load scene after the last camera

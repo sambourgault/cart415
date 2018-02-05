@@ -306,7 +306,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &69294667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -787,8 +787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf6a5521363f74d64b97b1a8a3bc8c82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Camera: {fileID: 0}
-  m_Black: {fileID: 0}
+  m_MessageText: {fileID: 1224338692}
 --- !u!1001 &398896648
 Prefab:
   m_ObjectHideFlags: 0
@@ -1520,7 +1519,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: TANKS!
+  m_Text: the traffic
 --- !u!222 &1224338693
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1538,7 +1537,7 @@ MonoBehaviour:
   m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0.44705883, g: 0.27843142, b: 0.15686275, a: 0.5}
+  m_EffectColor: {r: 0.44117647, g: 0.44117647, b: 0.44117647, a: 0.5}
   m_EffectDistance: {x: -3, y: -3}
   m_UseGraphicAlpha: 0
 --- !u!1001 &1257268928
@@ -2084,6 +2083,11 @@ Prefab:
     - target: {fileID: 4169740486511026, guid: 8912da86370a9409f9e6ea0fd68f6ca6, type: 2}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114083062720780036, guid: 8912da86370a9409f9e6ea0fd68f6ca6,
+        type: 2}
+      propertyPath: m_TurnSpeed
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8912da86370a9409f9e6ea0fd68f6ca6, type: 2}

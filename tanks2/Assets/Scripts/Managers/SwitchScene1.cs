@@ -35,9 +35,9 @@ public class SwitchScene1 : MonoBehaviour {
 
 		m_BlackRenderer.color = new Color(1f, 1f, 1f, newAlpha);
 
-		if (Input.GetKeyDown (KeyCode.Space)) {
+		/*if (Input.GetKeyDown (KeyCode.Space)) {
 			SceneManager.LoadScene ("tanks_inside3");
-		}
+		}*/
 
 		if (m_Camera.fieldOfView <= 0.5f) {
 			//m_Counter.counter++;
@@ -49,13 +49,13 @@ public class SwitchScene1 : MonoBehaviour {
 
 
 			m_Instance[counterCactus] = Instantiate(m_CactusPrefab, new Vector3(Random.Range(-1.5f, 1.5f), 0f, Random.Range(-2.5f, 0.5f)), Quaternion.Euler(0f, Random.Range(0f, 359f), 0f)) as GameObject;
-			float randomScale = (counterCactus+1)/7 + Random.Range (0.3f, 0.4f);
+			float randomScale = (counterCactus+1f)/7f + Random.Range (3f, 4f)/10f;
 			m_Instance [counterCactus].transform.localScale = new Vector3 (randomScale, randomScale, randomScale);
 			counterCactus++;
 			//if (counterScene)
 			//counterScene++;
 			// next game
-			if (counterCactus == 20){
+			if (counterCactus == 10){
 				SceneManager.LoadScene ("tanks_void_round");
 			}
 		}

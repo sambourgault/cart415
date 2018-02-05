@@ -15,7 +15,7 @@ public class CameraControl1 : MonoBehaviour
 	private Rigidbody m_Rigidbody; 
 	private string m_TurnAxisName; 
 	private float m_TurnInputValue;  
-	public float m_TurnSpeed = 0.001f; 
+	public float m_TurnSpeed = 0.01f; 
 
     private void Awake()
     {

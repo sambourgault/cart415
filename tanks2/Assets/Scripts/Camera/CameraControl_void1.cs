@@ -1,4 +1,7 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class CameraControl_void1 : MonoBehaviour
 {
@@ -7,6 +10,7 @@ public class CameraControl_void1 : MonoBehaviour
 	public float m_MinSize = 6.5f;                  
 	[HideInInspector] public Transform[] m_Targets; 
 	public float m_Speed = 10f;  
+	public Text m_MessageText;
 
 
 	private Camera m_Camera; 
@@ -21,6 +25,8 @@ public class CameraControl_void1 : MonoBehaviour
 	private float m_VerticalValue;
 	private float m_HorizontalValue;
 
+	private int initialFrame;
+
 
 	private void Awake()
 	{
@@ -34,16 +40,26 @@ public class CameraControl_void1 : MonoBehaviour
 	private void Start(){
 		m_VerticalMovement = "VerticalCam";
 		m_HorizontalMovement = "HorizontalCam";
+
+		initialFrame = Time.frameCount;
+
 	}
 
 
 	private void Update()
 	{
+		if ((Time.frameCount - initialFrame) > 100){
+			Debug.Log ("bloop");
+			m_MessageText.text = string.Empty;
+		}
 		// Store the player's input and make sure the audio for the engine is playing.
 		// find values of two axis and store them
 		m_VerticalValue = Input.GetAxis(m_VerticalMovement);
 		m_HorizontalValue = Input.GetAxis(m_HorizontalMovement);
 
+		if ((Time.frameCount- initialFrame)  > 1100) {
+			SceneManager.LoadScene ("tanks_mother");
+		}
 		// call the function that manage the audio
 	}
 
