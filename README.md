@@ -1,11 +1,35 @@
 # cart415 - PROCESS JOURNAL
 this repo holds sam's attempts to dive into game design.
 
+## Feb 10th, 2018: First thoughts on Sound
+
+**Ideas**
+
+*SOUND*
+- commentator of the game: commentator(s) describe everything around you without you knowing what it is. → a bit boring, probably already made, not much to learn about video game making, but potentially funny
+- alvin lucier "I am sitting in a room" : how and what to record? there is no real space in video game, lucier what studying the resonance/acoustic of the room he was sitting into. But if the room is virtual, is there such thing as acoustic, except the one that can be created artificially by the maker?
+- modular synth: cool stuff.
+- machine learning, like little Albert experiment: teaching fear to a tank through sounds.
+- multiple sound sources that make sense only when you positioned yourself perfectly in the middle between the sources.
+- sick AI, sneezing AI, atchooo.. addition of common sounds until very loud and messy, filling the cage
+- dance to music otherwise your tank will die. dance to the death!! The beat is accelerating! Tank tank revolution: very good training.
+- sound journey: not really original.
+- creating a bunch of rooms with different acoustic qualities and the "proutprout" + background music are modified according to that. Again, is there something as acoustic in game?
+- AI creating music. additive synth using AI? or substrative synth.
+- synaesthesia..
+- stereo inversion: inverting the panning of the sound
+- music when shooting for a note
+- dancing tanks, partyyyyy! you attend a tank pary.
+- tank as the instrument, the system, the wheels look just like a recorder!!!!
+- sound inside the tank head, “Ommmmmmmm...”
+- every time you hit something it tells you what it is. audio guide style: might be funny. the voice would be an online free voice such as text to speech
+- experimenting moving the audio listener in weird place: humm the result is not as convincing as I imagined. But I think that the idea is worth pushing forward.
+
 ## Feb 5th, 2018: Final built
 
 The final built has been completed. I decided to include a title before each chapter. And to make WASD the only controls along the game. The audio is not destroyed with every new scene which gives a sense of continuity in this "spiritual" quest.
 
-Also I feel confident about my choice of locating "the mother" prototype in the middle of the game since it is the only one that doesn't require player input to move forward. Now that it is built, it appears as a nostalgic interlude revealing the origin of the tanks through the vision of their childhood. 
+Also I feel confident about my choice of locating "the mother" prototype in the middle of the game since it is the only one that doesn't require player input to move forward. Now that it is built, it appears as a nostalgic interlude revealing the origin of the tanks through the vision of their childhood.
 
 ![alt text](https://github.com/sambourgault/cart415/blob/master/tanks_cam.png)
 

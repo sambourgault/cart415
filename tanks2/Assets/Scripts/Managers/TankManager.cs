@@ -9,7 +9,8 @@ public class TankManager
     [HideInInspector] public int m_PlayerNumber;             
     [HideInInspector] public string m_ColoredPlayerText;
     [HideInInspector] public GameObject m_Instance;          
-    [HideInInspector] public int m_Wins;                     
+    [HideInInspector] public int m_Wins;    
+	[HideInInspector] public AudioSource m_Audio;
 
 
     private TankMovement m_Movement;       
@@ -17,11 +18,13 @@ public class TankManager
     private GameObject m_CanvasGameObject;
 
 
+
     public void Setup()
     {
         m_Movement = m_Instance.GetComponent<TankMovement>();
         m_Shooting = m_Instance.GetComponent<TankShooting>();
         m_CanvasGameObject = m_Instance.GetComponentInChildren<Canvas>().gameObject;
+		m_Audio = m_Instance.GetComponent<AudioSource> ();
 
         m_Movement.m_PlayerNumber = m_PlayerNumber;
         m_Shooting.m_PlayerNumber = m_PlayerNumber;
