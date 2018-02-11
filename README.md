@@ -1,6 +1,13 @@
 # cart415 - PROCESS JOURNAL
 this repo holds sam's attempts to dive into game design.
 
+## Feb 11th, 2018: Two rough prototypes
+
+Prototype 1: Sound recorder --> Inspired by Steve Reich and Brian Eno pieces experimenting with synchronicity and asynchronicity of multiple sound recorder playing back at slightly different speed, this prototypes explores the visual resemblance of a tank tread tracks and a magnetic tape. Each AI in the game has a specific violon note that plays at different speed than the others. The AIs are on a platform from which they can fall. If they fall, they disappear, and the sound does too.
+
+Prototype 2: Audio guide --> This prototype appears as an audio guide to explore the world of Tanks!. Each element from the game is replaced by a white prism and when the tank (in a FPS format) collide with the object, Daisy, the audio guide, gives the player a description of the object.
+
+
 ## Feb 10th, 2018: First thoughts on Sound
 
 **Ideas**
