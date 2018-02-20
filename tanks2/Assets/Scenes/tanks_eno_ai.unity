@@ -891,14 +891,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 344142734}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: -21.5}
+  m_LocalRotation: {x: 0.14845438, y: 0.6913475, z: -0.14845438, w: 0.6913475}
+  m_LocalPosition: {x: -46.4, y: 24, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1605456669}
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 24.238, y: 90.00001, z: 0}
 --- !u!114 &344142736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1002,6 +1002,16 @@ Prefab:
     - target: {fileID: 1354967740101460, guid: c121f1a0c64ed43bfb3626deeba0896e, type: 2}
       propertyPath: m_Name
       value: TankRotate (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 82461479031671386, guid: c121f1a0c64ed43bfb3626deeba0896e,
+        type: 2}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82400828199683416, guid: c121f1a0c64ed43bfb3626deeba0896e,
+        type: 2}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c121f1a0c64ed43bfb3626deeba0896e, type: 2}
@@ -1960,7 +1970,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1138698489}
   m_LocalRotation: {x: -0, y: 0.77094126, z: -0, w: 0.6369063}
-  m_LocalPosition: {x: 0.5, y: 0.03508423, z: 15.5}
+  m_LocalPosition: {x: 0.5, y: 0.03508423, z: -0.1}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}

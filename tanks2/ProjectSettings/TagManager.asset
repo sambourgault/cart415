@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Camera
   - Panel
+  - Floor
+  - Note
   layers:
   - Default
   - TransparentFX

@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TankCollision : MonoBehaviour {
-	void OnTriggerEnter(Collider other){
-		other.GetComponent<AudioSource> ().Play ();
+	void OnCollisionEnter(Collision other){
+		if (other.gameObject.tag != "Floor") {
+			other.gameObject.GetComponent<AudioSource> ().Play ();
+		}
 	}
 }

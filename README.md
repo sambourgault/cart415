@@ -1,6 +1,32 @@
 # cart415 - PROCESS JOURNAL
 this repo holds sam's attempts to dive into game design.
 
+## Feb 19th, 2018: Still trying out
+
+Ehhh boooy...
+
+I don't know where I am going with that prototype... I'm floating in a world of confusion... Hoping the TANKS! could talk like cats do.
+
+Enumerating the pieces that I find the most compelling within the field of minimalist music and then trying to reuse certain concepts in my TANKS! remake appears as the good way to begin with.
+
+*Experiments on minimalist music: and what it explores*
+“It’s gonna rain” Steve Reich: plays with the offset between left and right channels
+“4:33” John Cage: plays with the sound created in the surrounding
+“I’m sitting in a room” Alvin Lucier: studies the resonance of a room and how his stutter disappears as noise amplifies.
+Track two of “Music for Airport” Brian Eno: plays with the offset of six magnetic tapes (similar to Steve Reich "It's gonna rain").
+“Pendulum Music” Steve Reich: experiments with feedback between mics and speakers.
+"Two Pages" Philip Glass: plays with rhythm and variation in the length of the musical sentences
+"Einstein on the beach" Philip Glass: IDEM in the "knees" of the piece.
+
+
+New attempt:
+
+Mix between offset in stereo and work on rhythm...
+
+Inspired by "Einstein on the Beach", it could be a race between the left and the right stereo output in the Philip Glass way of compositing, using simple rules to create musical sentences evolving in length. Inspired by the Knee Plays in "Einstein by the Beach". The player would hit the element along the way and we would have a glimpse of description.
+
+Maybe I'm going toward a TANKS! opera.. TANKS! in a choir singing to the god of Unity.
+
 ## Feb 11th, 2018: Two rough prototypes
 
 Prototype 1: Sound recorder --> Inspired by Steve Reich and Brian Eno pieces experimenting with synchronicity and asynchronicity of multiple sound recorder playing back at slightly different speed, this prototypes explores the visual resemblance of a tank tread tracks and a magnetic tape. Each AI in the game has a specific violon note that plays at different speed than the others. The AIs are on a platform from which they can fall. If they fall, they disappear, and the sound does too.
