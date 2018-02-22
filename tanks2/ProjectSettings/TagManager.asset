@@ -8,6 +8,7 @@ TagManager:
   - Panel
   - Floor
   - Note
+  - Environment
   layers:
   - Default
   - TransparentFX

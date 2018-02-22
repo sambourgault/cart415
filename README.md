@@ -1,6 +1,23 @@
 # cart415 - PROCESS JOURNAL
 this repo holds sam's attempts to dive into game design.
 
+## Feb 22th, 2018: Implementation
+
+I implemented the "Clapping Music" concept on the tank game itself. Maybe a visualization would be helpful because it is not obvious what it's happening.
+
+I still think that this prototype is lacking something. I wonder if the increase of intensity that I am thinking of will be enough, if it creates a sense of tension. The first knee in "Einstein on the beach" is thrilling as it succeeds in creating a feeling of unison. One building bloc at a time, the piece becomes more complex. At the beginning, two voices seem to tell random sentences to the public, but as the piece goes by, new voices appear and the whole becomes stronger.  
+
+I guess I should just go for it. For real. Adding progressively new duo of tanks. In term of artificial voice, I already have Alice, George, Jenna. I'm going to add John and Daisy (from http://www.fromtexttospeech.com). Until it is cacophonous. And then! I could take advantage of a mistake I made recently. The objects in the way of the tanks are triggered when tanks pass through them. But if I keep one, the last one, as a solid object (impenetrable) in front of the camera attached to one of the central tanks, the movement of everything else will continue without it. The sound will then vanish as it follows a 3D spatial blend.
+
+**The game becomes this great tanks opera that you did not attend because you got stock on a cube.**
+
+I am also struggling with the absence of interactivity. The only act a player can have on this game is to start it.. More thoughts on that later.
+
+## Feb 21th, 2018: Minimalist music concepts
+
+Process music: same rhythm but one is offset of one beat every four bars. This could be done with the tank, by maybe reusing the tank sound (fire shooting / fire charging/ shell explosion)? The set up that I currently have would be good for such experimentation since it shows two tanks driving forward on a path that resembles a score. Steve Reich's "Clapping Music" is a good example of that concept. And here, a good visualization of that: https://www.youtube.com/watch?v=eu-tRXgOrdg
+
+
 ## Feb 19th, 2018: Still trying out
 
 Ehhh boooy...

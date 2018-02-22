@@ -47,8 +47,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\AudioClips\SwitchScene_mother.cs" />
+     <Compile Include="Assets\EnvCollision.cs" />
      <Compile Include="Assets\NoteCollision.cs" />
-     <Compile Include="Assets\Oscillator2.cs" />
      <Compile Include="Assets\SceneCounter.cs" />
      <Compile Include="Assets\Scripts\AudioSourceGetSpectrumDataExample.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraControl.cs" />
@@ -72,6 +72,9 @@
      <Compile Include="Assets\Scripts\Managers\TankManager.cs" />
      <Compile Include="Assets\Scripts\Oscillator.cs" />
      <Compile Include="Assets\Scripts\Oscillator1.cs" />
+     <Compile Include="Assets\Scripts\Oscillator2.cs" />
+     <Compile Include="Assets\Scripts\Oscillatorleft.cs" />
+     <Compile Include="Assets\Scripts\Oscillatorright.cs" />
      <Compile Include="Assets\Scripts\Shell\ShellExplosion.cs" />
      <Compile Include="Assets\Scripts\Tank\AiLine.cs" />
      <Compile Include="Assets\Scripts\Tank\SoundAi.cs" />
@@ -79,6 +82,7 @@
      <Compile Include="Assets\Scripts\Tank\TankHealth.cs" />
      <Compile Include="Assets\Scripts\Tank\TankMovement.cs" />
      <Compile Include="Assets\Scripts\Tank\TankMovement1.cs" />
+     <Compile Include="Assets\Scripts\Tank\TankMovement2.cs" />
      <Compile Include="Assets\Scripts\Tank\TankShooting.cs" />
      <Compile Include="Assets\Scripts\Tank\TankTowardsGod.cs" />
      <Compile Include="Assets\Scripts\Tank\TankVibrate.cs" />
