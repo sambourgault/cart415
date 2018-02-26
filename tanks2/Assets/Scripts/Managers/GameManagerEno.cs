@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class GameManagerEno : MonoBehaviour {
 
@@ -9,11 +11,11 @@ public class GameManagerEno : MonoBehaviour {
 	public float m_StartDelay = 3f;         
 	public float m_EndDelay = 3f;           
 	public CameraControl m_CameraControl;   
-	//public Text m_MessageText;              
+	public Text m_MessageText;              
 	public GameObject m_TankPrefab;         
 	public TankAiManager[] m_Tanks;   
 	public AudioClip[] audios;
-
+	public AudioSource maestro;
 
 	private int m_RoundNumber;              
 	private WaitForSeconds m_StartWait;     
@@ -21,19 +23,84 @@ public class GameManagerEno : MonoBehaviour {
 	private TankAiManager m_RoundWinner;
 	private TankAiManager m_GameWinner;       
 	private float range = 15f;
+	private int tankCounter;
+	private bool title;
+	private bool maestroOnce;
+	private bool beginingOfEnd;
+	public Image panel;
+	private float timeToFade;
 
 	private void Start()
 	{
-		m_StartWait = new WaitForSeconds(m_StartDelay);
-		m_EndWait = new WaitForSeconds(m_EndDelay);
+		//m_StartWait = new WaitForSeconds(m_StartDelay);
+		//m_EndWait = new WaitForSeconds(m_EndDelay);
+		title = true;
 
-		SpawnAllTanks();
+		tankCounter = 0;
+		maestroOnce	= true;
+		beginingOfEnd = true;
+		timeToFade = 0f;
+
+
+		//SpawnAllTanks();
+
+	}
+
+	private void Update(){
+		if (Time.frameCount > 150) {
+			title = false;
+		} 
+
+		if (title) {
+			if (maestroOnce && Time.frameCount > 50) {
+				maestro.Play ();
+				maestroOnce = false;
+			}
+
+		} else {
+			if (!maestroOnce) {
+				m_MessageText.text = string.Empty;
+				panel.enabled = false;
+				maestroOnce = true;
+			}
+
+		
+
+			if (Input.GetMouseButtonDown (0) && tankCounter < 100) {
+				m_Tanks [tankCounter].m_Instance =
+				Instantiate (m_TankPrefab, m_Tanks [0].m_SpawnPoint.position, m_Tanks [0].m_SpawnPoint.rotation) as GameObject;
+				m_Tanks [tankCounter].Setup ();
+				m_Tanks [tankCounter].m_Audio.clip = audios [tankCounter % 5];
+				m_Tanks [tankCounter].m_Audio.Play ();
+				tankCounter++;
+			}
+		}
+			
+
+		if (tankCounter >= 99) {
+			if (beginingOfEnd) {
+				panel.canvasRenderer.SetAlpha(0.01f);
+				//panel.CrossFadeAlpha (0f, 0f, false);
+				panel.enabled = true;
+				beginingOfEnd = false;
+			}
+
+			panel.CrossFadeAlpha (1.0f, 10.0f, false);
+
+
+			Debug.Log ("alpha decreasing :" + panel.canvasRenderer.GetColor().a);
+
+			if (panel.canvasRenderer.GetColor().a > 0.95f) {
+				SceneManager.LoadScene ("tanks_eno3");
+			}
+		}
 
 	}
 
 
 	private void SpawnAllTanks()
 	{
+		
 		Debug.Log (audios.Length);
 		for (int i = 0; i < audios.Length; i++)
 		{

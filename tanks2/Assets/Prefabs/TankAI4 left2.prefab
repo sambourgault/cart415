@@ -40,14 +40,12 @@ GameObject:
   - component: {fileID: 65111576965382710}
   - component: {fileID: 195416003548934256}
   - component: {fileID: 82914456173382582}
-  - component: {fileID: 82651731634597980}
-  - component: {fileID: 114892903163454300}
-  - component: {fileID: 114239916436907900}
   - component: {fileID: 114965293442077768}
   - component: {fileID: 164351462484541018}
   - component: {fileID: 166574952330500132}
   - component: {fileID: 169422309920593398}
   - component: {fileID: 82866201472949280}
+  - component: {fileID: 82091186759918808}
   - component: {fileID: 114362493842369210}
   m_Layer: 0
   m_Name: TankAI4 left2
@@ -281,7 +279,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1056812120768948}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -436.7, y: 0, z: 4.4}
+  m_LocalPosition: {x: -441, y: 0, z: 5.3}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4037529115679298}
@@ -299,7 +297,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1316849389892068}
   m_LocalRotation: {x: 0.008439598, y: -0.059989467, z: -0.025442367, w: 0.9978391}
-  m_LocalPosition: {x: 2.8700001, y: 1.92, z: -4.529999}
+  m_LocalPosition: {x: 2.8700001, y: 1.92, z: -5.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4604937563824950}
@@ -556,7 +554,7 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1316849389892068}
   m_Enabled: 1
---- !u!82 &82651731634597980
+--- !u!82 &82091186759918808
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -565,9 +563,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_audioClip: {fileID: 8300000, guid: c17f124fcdc0f5446a72f793898bd74b, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -577,7 +575,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
-  Pan2D: -1
+  Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -653,12 +651,12 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 34
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
   Pan2D: -1
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -685,7 +683,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -727,7 +725,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.39
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -738,7 +736,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 300
   Pan2D: -1
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -809,7 +807,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1316849389892068}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 243a781cad112c75d0008dfa8d76c639, type: 3}
   m_Name: 
@@ -817,18 +815,6 @@ MonoBehaviour:
   shader: {fileID: 4800000, guid: daf9781cad112c75d0008dfa8d76c639, type: 3}
   textureRamp: {fileID: 0}
   rampOffset: 0
---- !u!114 &114239916436907900
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1056812120768948}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f706e036b11e84952a4d220a576ddb19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Speed: 12
 --- !u!114 &114362493842369210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -840,12 +826,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb9cb2112a14946949ee5c84fe22ce67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clips: []
+  clips:
+  - {fileID: 8300000, guid: 7e99ba45b94c34200840b8b14bca39e5, type: 3}
+  - {fileID: 8300000, guid: 08b7b0e0b3a4a4cf89f456878fb6c95c, type: 3}
+  - {fileID: 8300000, guid: 2ec4b51be6ab8469b881f222299d7ddf, type: 3}
+  - {fileID: 8300000, guid: b3ca2558f4c9244758cf4b8553e7a8b2, type: 3}
+  fire: {fileID: 8300000, guid: 3a77defcde1caaa40b6f7502547e0c4e, type: 3}
   osc: {fileID: 82914456173382582}
   drum: {fileID: 82866201472949280}
+  charging: {fileID: 82091186759918808}
   gain: 0
   volume: 0.1
-  typeOfWave: 1
+  typeOfWave: 0
   frequencies: []
   thisFreq: 0
 --- !u!114 &114593434060711738
@@ -862,24 +854,6 @@ MonoBehaviour:
   shader: {fileID: 4800000, guid: daf9781cad112c75d0008dfa8d76c639, type: 3}
   textureRamp: {fileID: 0}
   rampOffset: 0
---- !u!114 &114892903163454300
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1056812120768948}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92048c97fe9fe44f2b13e0f130bd400e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clips: []
-  osc: {fileID: 0}
-  gain: 0
-  volume: 0.1
-  typeOfWave: 2
-  frequencies: []
-  thisFreq: 1
 --- !u!114 &114965293442077768
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -891,7 +865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 354ad1e79a0bc4cb3adfdf211e3b0a57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Speed: 15.1
+  m_Speed: 12
 --- !u!124 &124079897945031456
 Behaviour:
   m_ObjectHideFlags: 1
@@ -928,7 +902,7 @@ AudioChorusFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1056812120768948}
-  m_Enabled: 1
+  m_Enabled: 0
   m_DryMix: 0.5
   m_WetMix1: 0.5
   m_WetMix2: 0.5
@@ -942,7 +916,7 @@ AudioLowPassFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1056812120768948}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_LowpassResonanceQ: 1
   lowpassLevelCustomCurve:

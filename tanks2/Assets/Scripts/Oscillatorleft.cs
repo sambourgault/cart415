@@ -9,6 +9,8 @@ public class Oscillatorleft : MonoBehaviour {
 	public AudioClip fire;
 	public AudioSource osc;
 	public AudioSource drum;
+	public AudioSource charging;
+
 
 	private double increment;
 	private double phase;
@@ -29,6 +31,8 @@ public class Oscillatorleft : MonoBehaviour {
 	private int barCounter;
 
 	private bool beginVoice;
+	private bool beginCharging;
+
 	//public GameObject tanks;
 
 	void Awake(){
@@ -42,7 +46,9 @@ public class Oscillatorleft : MonoBehaviour {
 			patternList.Add (pattern[i]);
 		}
 
-		beginVoice = false;
+		beginVoice = true;
+		beginCharging = false;
+
 
 		//clips = new AudioClip[2];
 
@@ -62,19 +68,38 @@ public class Oscillatorleft : MonoBehaviour {
 
 	void Update(){
 		gain = volume;	
+		beginVoice = true;
 
-		if (Input.GetKeyUp(KeyCode.Space)){
-			beginVoice = true;
 
-			gain = 0;
-		}
-
-		if (Time.frameCount > 500){
-			//beginVoice = true;
+		if (transform.position.x > 1407) {
+			beginCharging = true;
 		}
 	}
 
 	void OnTriggerEnter(Collider other){
+		// VOICE
+		if ( other.gameObject.tag == "Note"){
+
+			GameObject go = other.gameObject;
+			go.transform.position = new Vector3(go.transform.position.x + 120, go.transform.position.y , go.transform.position.z );
+			beatCounter = beatCounter % beat;
+			Debug.Log ("left " + beatCounter);
+
+			if (beginVoice){
+				//beatCounter = beatCounter % beat;
+
+				if (patternList [patternCounter] == 'o' && beatCounter < clips.Length) {
+					osc.PlayOneShot(clips[beatCounter], 1);
+
+
+					if (beginCharging) {
+						charging.Play ();
+					}
+				}
+			}
+			beatCounter++;
+		}
+
 		// DRUM
 		if (patternList [patternCounter] == 'o' && other.gameObject.tag == "Note") {
 			drum.PlayOneShot (fire, 1);
@@ -94,31 +119,10 @@ public class Oscillatorleft : MonoBehaviour {
 			}
 
 			patternCounter = patternCounter % pattern.Length;
+		
 			barCounter = barCounter % 4;
 		}
-
-		// VOICE
-		if (other.gameObject.tag == "Note"){
-			GameObject go = other.gameObject;
-			go.transform.position = new Vector3(go.transform.position.x + 100, go.transform.position.y , go.transform.position.z );
-
-			if (beginVoice){
-			beatCounter = beatCounter % beat;
-
-			if (beatCounter < clips.Length) {
-				osc.PlayOneShot(clips[beatCounter], 1);
-			}
-			beatCounter++;
-
-				/*if (beatCounter == 4) {
-					float random = Random.Range (0f, 1f);
-					if (random > 0.7f) {
-						beat = (int)Random.Range (2f, 4f);
-						Debug.Log ("new beat " + beat);
-					}
-				}*/
-			}
-		}
+			
 	}
 
 	void ProcessMusic(){

@@ -1,11 +1,31 @@
 # cart415 - PROCESS JOURNAL
 this repo holds sam's attempts to dive into game design.
 
+## Feb 26th, 2018: Thoughts from the last few days
+
+In Steve Reich’s “Pendulum Music”, the interpreters are only there to trigger the piece. They bring a microphone at a certain angle over a speaker and let it go. The mic then oscillate over the speaker creating feedback noise. That’s it, their part is done and gravity takes care of the rest.  
+Pendulum Music : https://www.youtube.com/watch?v=fU6qDeJPT-w
+
+A similar logic can be applied to this game. The player is the maestro and decide when the game begins but never when it is gonna end. The player is there to instantiate the tanks by clicking the left mouse button. It might be the easy way to go though..
+
+Updates:
+- the people counting is synchronize with the shift in the beat.
+- i decided to implement two little games. The first implies AIs falling from a platform that act as "The prelude" of the game. The second one is the two tanks riding side by side, which acts as "The opera".
+- the player becomes the maestro of these games.
+
+Still few hours to go..
+
+What’s missing:
+- visualization of the shift in beat
+- transition between the AI little game
+- adding wheel rotation to see that tanks are moving forward
+
+
 ## Feb 22th, 2018: Implementation
 
-I implemented the "Clapping Music" concept on the tank game itself. Maybe a visualization would be helpful because it is not obvious what it's happening.
+I implemented the "Clapping Music" concept on the tank game itself. Maybe a visualization would be helpful because it's not obvious what it's happening.
 
-I still think that this prototype is lacking something. I wonder if the increase of intensity that I am thinking of will be enough, if it creates a sense of tension. The first knee in "Einstein on the beach" is thrilling as it succeeds in creating a feeling of unison. One building bloc at a time, the piece becomes more complex. At the beginning, two voices seem to tell random sentences to the public, but as the piece goes by, new voices appear and the whole becomes stronger.  
+I still think that this prototype is lacking something. I wonder if the increase of sound intensity that I am thinking of will be enough, if it creates a sense of tension. The first knee in "Einstein on the beach" is thrilling as it succeeds in creating a feeling of unison. One building bloc at a time, the piece becomes more complex. At the beginning, two voices seem to tell random sentences to the public, but as the piece goes by, new voices appear and the whole becomes stronger.  
 
 I guess I should just go for it. For real. Adding progressively new duo of tanks. In term of artificial voice, I already have Alice, George, Jenna. I'm going to add John and Daisy (from http://www.fromtexttospeech.com). Until it is cacophonous. And then! I could take advantage of a mistake I made recently. The objects in the way of the tanks are triggered when tanks pass through them. But if I keep one, the last one, as a solid object (impenetrable) in front of the camera attached to one of the central tanks, the movement of everything else will continue without it. The sound will then vanish as it follows a 3D spatial blend.
 

@@ -27,7 +27,10 @@ public class Oscillatorright : MonoBehaviour {
 	private List<char> patternList;
 	private int patternCounter;
 	private int barCounter;
+
 	private bool beginVoice;
+
+
 	//public GameObject tanks;
 
 	void Awake(){
@@ -60,20 +63,34 @@ public class Oscillatorright : MonoBehaviour {
 
 	void Update(){
 		gain = volume;	
-
-		/*if (Time.frameCount % 200 == 0) {
-			int beat = (int)Random.Range (1f, 5f);
-			//Debug.Log ("beeeat change: " + beat);
-			beatCounter = beat - 1;
-		}*/
+		beginVoice = true;
 			
-		if (Input.GetKeyUp(KeyCode.Space)){
-			gain = 0;
-			beginVoice = true;
-		}
+
+
 	}
 
 	void OnTriggerEnter(Collider other){
+		Debug.Log ("Collisssionononono");
+
+		// VOICE
+		if (other.gameObject.tag == "Note"){
+			GameObject go = other.gameObject;
+			go.transform.position = new Vector3(go.transform.position.x + 120, go.transform.position.y , go.transform.position.z );
+
+			beatCounter = beatCounter % beat;
+			Debug.Log ("right " + beatCounter);
+
+			if (beginVoice) {
+				// voice only on "on" beats
+				if (patternList [patternCounter] == 'o') {
+					osc.PlayOneShot (clips [beatCounter], 1);
+
+				}
+			}
+			beatCounter++;
+		}
+
+
 		// DRUM
 		if (patternList[patternCounter] == 'o' && other.gameObject.tag == "Note") {
 			drum.PlayOneShot (fire, 1);
@@ -95,31 +112,7 @@ public class Oscillatorright : MonoBehaviour {
 			patternCounter = patternCounter % pattern.Length;
 			barCounter = barCounter % 4;
 		}
-
-		// VOICE
-		if (other.gameObject.tag == "Note"){
-			GameObject go = other.gameObject;
-			go.transform.position = new Vector3(go.transform.position.x + 100, go.transform.position.y , go.transform.position.z );
-
-			if (beginVoice) {
-				
-				beatCounter = beatCounter % beat;
-
-				if (beatCounter < clips.Length) {
-					osc.PlayOneShot (clips [beatCounter], 1);
-				}
-
-				beatCounter++;
-
-				/*if (beatCounter == 4) {
-					float random = Random.Range (0f, 1f);
-					if (random > 0.7f) {
-						beat = (int)Random.Range (2f, 4f);
-						Debug.Log ("new beat " + beat);
-					}
-				}*/
-			}
-		}
+			
 	}
 
 	void ProcessMusic(){

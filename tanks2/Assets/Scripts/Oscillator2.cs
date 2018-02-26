@@ -84,7 +84,7 @@ public class Oscillator2 : MonoBehaviour {
 
 		if (other.gameObject.tag == "Note"){
 			GameObject go = other.gameObject;
-			go.transform.position = new Vector3(go.transform.position.x + 80, go.transform.position.y , go.transform.position.z );
+			go.transform.position = new Vector3(go.transform.position.x + 40, go.transform.position.y , go.transform.position.z );
 			//other.collider.enabled = false;
 			beatCounter = (beatCounter + 1) % beat;
 			//Debug.Log ("collision with note");

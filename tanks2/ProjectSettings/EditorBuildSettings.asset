@@ -19,3 +19,7 @@ EditorBuildSettings:
     path: Assets/Scenes/tanks_traffic.unity
   - enabled: 1
     path: Assets/Scenes/tanks_god.unity
+  - enabled: 1
+    path: Assets/Scenes/tanks_eno3.unity
+  - enabled: 1
+    path: Assets/Scenes/tanks_eno_ai.unity

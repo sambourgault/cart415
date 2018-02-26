@@ -80,6 +80,7 @@
 -define:UNITY_TEAM_LICENSE
 'Assets/AudioClips/SwitchScene_mother.cs'
 'Assets/EnvCollision.cs'
+'Assets/GameManagerGlass.cs'
 'Assets/NoteCollision.cs'
 'Assets/SceneCounter.cs'
 'Assets/Scripts/AudioSourceGetSpectrumDataExample.cs'

@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\AudioClips\SwitchScene_mother.cs" />
      <Compile Include="Assets\EnvCollision.cs" />
+     <Compile Include="Assets\GameManagerGlass.cs" />
      <Compile Include="Assets\NoteCollision.cs" />
      <Compile Include="Assets\SceneCounter.cs" />
      <Compile Include="Assets\Scripts\AudioSourceGetSpectrumDataExample.cs" />
