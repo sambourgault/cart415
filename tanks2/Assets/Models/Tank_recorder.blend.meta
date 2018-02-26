@@ -96,7 +96,71 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 102
+      lastFrame: 248
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Assembly
+        weight: 1
+      - path: Assembly/BezierCircle
+        weight: 1
+      - path: Assembly/BezierCircle/Tooth_001
+        weight: 1
+      - path: Assembly/BezierCircle/Tooth_002
+        weight: 1
+      - path: Assembly/TankTracksLeft_003
+        weight: 1
+      - path: Assembly/TankTracksLeft_005
+        weight: 1
+      - path: Assembly/ThreadMove
+        weight: 1
+      - path: Assembly_001
+        weight: 1
+      - path: Assembly_001/BezierCircle_001
+        weight: 1
+      - path: Assembly_001/BezierCircle_001/Tooth_000
+        weight: 1
+      - path: Assembly_001/TankTracksLeft_000
+        weight: 1
+      - path: Assembly_001/TankTracksLeft_001
+        weight: 1
+      - path: Assembly_001/ThreadMove_001
+        weight: 1
+      - path: Tank
+        weight: 1
+      - path: Tank/TankRenderers
+        weight: 1
+      - path: TankChassis_001
+        weight: 1
+      - path: TankTurret_001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

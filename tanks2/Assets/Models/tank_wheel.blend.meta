@@ -1,0 +1,121 @@
+fileFormatVersion: 2
+guid: fd28e7d131ed34930beefe56ec4bd409
+timeCreated: 1519658823
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: TankChassis
+    100004: TankRenderers
+    100006: TankTracksLeft
+    100008: TankTracksLeft_001
+    100010: TankTracksLeft_002
+    100012: TankTracksRight
+    100014: TankTracksRight_001
+    100016: TankTracksRight_002
+    100018: TankTurret
+    400000: //RootNode
+    400002: TankChassis
+    400004: TankRenderers
+    400006: TankTracksLeft
+    400008: TankTracksLeft_001
+    400010: TankTracksLeft_002
+    400012: TankTracksRight
+    400014: TankTracksRight_001
+    400016: TankTracksRight_002
+    400018: TankTurret
+    2300000: TankChassis
+    2300002: TankTracksLeft
+    2300004: TankTracksLeft_001
+    2300006: TankTracksLeft_002
+    2300008: TankTracksRight
+    2300010: TankTracksRight_001
+    2300012: TankTracksRight_002
+    2300014: TankTurret
+    3300000: TankChassis
+    3300002: TankTracksLeft
+    3300004: TankTracksLeft_001
+    3300006: TankTracksLeft_002
+    3300008: TankTracksRight
+    3300010: TankTracksRight_001
+    3300012: TankTracksRight_002
+    3300014: TankTurret
+    4300000: TankTracksRight_002
+    4300002: TankTracksRight_001
+    4300004: TankTracksLeft_002
+    4300006: TankTracksLeft_001
+    4300008: TankChassis
+    4300010: TankTracksRight
+    4300012: TankTracksLeft
+    4300014: TankTurret
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

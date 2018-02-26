@@ -50,6 +50,7 @@
      <Compile Include="Assets\EnvCollision.cs" />
      <Compile Include="Assets\GameManagerGlass.cs" />
      <Compile Include="Assets\NoteCollision.cs" />
+     <Compile Include="Assets\RecorderMotion.cs" />
      <Compile Include="Assets\SceneCounter.cs" />
      <Compile Include="Assets\Scripts\AudioSourceGetSpectrumDataExample.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraControl.cs" />

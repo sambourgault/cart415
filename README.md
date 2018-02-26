@@ -1,6 +1,14 @@
 # cart415 - PROCESS JOURNAL
 this repo holds sam's attempts to dive into game design.
 
+## Feb 26th, 2018 (suite)
+
+The game is divided in a prelude and an opera.
+
+In the prelude, the player creates AIs by pressing the left button mouse. Inspired by Brian Eno "Music for Airport", a violin note is attached on each of them, creating harmony and disharmony according to the player intensity in spawning new AIs. In this part of the piece, tanks become sound recorders (like their shape already suggests: the two wheels connected by a thread), playing back in loop the note they hold. The prelude ends when the maximum number of tanks has been created, following a predetermined law of this virtual world.
+
+The opera begins the same way, the player spawning two AIs in the video game void. This part of the game is a homage to Steve Reich "Clapping Music" and to Philip Glass first knee play of "Einstein on the Beach". A beat emerges from the collision of the tanks and other game objects in its surroundings, which contain audio from the old TANKS! game, like a twisted memory of how it was before. The two tanks stay synchronized but evolve in a desynchronised way. The rhythm pattern of one tank shifting of one beat every two bars. Collisions also trigger new voices, which describe part of the environment that used to be TANKS!. Until a virtual law strikes again, forcing the game to end.
+
 ## Feb 26th, 2018: Thoughts from the last few days
 
 In Steve Reich’s “Pendulum Music”, the interpreters are only there to trigger the piece. They bring a microphone at a certain angle over a speaker and let it go. The mic then oscillate over the speaker creating feedback noise. That’s it, their part is done and gravity takes care of the rest.  
