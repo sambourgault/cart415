@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/tanks_eno3.unity
+- path: Assets/Scenes/tanks_zen.unity
   isLoaded: 1
   isActive: 1
