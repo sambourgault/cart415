@@ -1,6 +1,54 @@
 # cart415 - PROCESS JOURNAL
 this repo holds sam's attempts to dive into game design.
 
+## March 12th, 2018
+*Ideas becoming clearer*
+1. On copying and reproduction. Like Pippin said in class, the idea of reproducing perfectly an object in game is futile since it requires only the act of copy-pasting. But at the same time, “copy-pasting” is part of many art practice in a way. Pop art, for instance, would reuse the exact same imagery of pop culture to constate the consumerist society. Blur the boundaries between commodity and art. Between factory workers and artists. Here, I could redo tank game from scratch. And exhibit this world in construction.  
+2. On absence and presence of objects. Objects, can be there or not there. In video game, this presence and absence depend on a boolean relationship. It is true or false. It is dead or not dead. It makes me think of Schrodinger cat. Also similar to Pippin’s cube museum with objects inside.
+3. When we play a game, the aesthetic of the game is always done and clean. Everything try to be coherent, in order to give the player a full and immersive experience. What if the player enters a game that is still under construction. The game could resemble the scene mode. And would allow the player to create little version of tanks. In a zen garden manner.  -- v
+4. Digital version of dry landscape / zen garden. There will be rain and wind, that will move the garden around, so you have to redo it, over and over again. Meditating Tank game.
+5. Arbitrary rules/physics of game. Same tank game, but then it stops and it talks to you. the UI begin to talk and exhibit the arbitrary aspect of game.
+- hi this is the UI. Sorry to interrupt the game but we have been receiving complaints on the state of the loosing tank after it loose. We want to reassure you to no tanks are hurt in the process. It’s only a game. Sorry again. Prefab are the idea in Plato and the clones are the instances of this perfect idea.
+Let me bring you to the test lab. It looks a bit like Einstein
+- gravity test on tanks.
+- collision test on tanks.
+- schrodinger test ← perfect randomness
+- interaction render versus collider
+- randomness is what human cannot understand..
+6. Generative Prototype. to be continued..
+
+*Description of two rough prototypes*
+1. This is a digital version of a dry landscape / zen garden using the destructive assets from the previous TANKS! game. There is rain and wind destructing your garden, so you have to redo it, over and over again. This is a meditating TANKS! game.
+
+2. The rules and the physics in games feel arbitrary since it depends only on the developer’s will. The TANKS! game follows the conventional laws of the world in which it was built in. This one we are in right now. In this version of TANKS!, the UI is taking care of you and bring you to an experimental lab showing you how physics can be broken inside a game engine.
+
+
+## March 12th, 2018 (and the week before)
+
+*Random ideas that could be exploited in the 3D objects prototype*
+**(ideas from last week that I forgot to push in my repo)**
+
+- repetition in game
+- deconstruction of the 3d objects
+- missing element, that make the game odd.
+- time and space / spacetime
+- alice in wonderland hole, following the rabbit tank.
+- UI versus 3D object
+- shooting game that transform itself into a philosophical game. about representation and reproduction in art
+- game that looks 3d   
+- materiality vs virtual object
+- presence and absence of the object
+- explore the propriety of object: transform, collider, rigibody. and add the gizmo to the game!!
+- redoing a sketch up version of tank. why is it relevant? the reproduction, blender, drawings… how does the game feel?
+- thinking about shaders and what this feels like.
+- texture of something on weird shapes
+- museum of war / 3d objects
+- game if to move object around to find your way out. Bit like the museum of digital technology
+
+*Ideas on 3D objects*
+Space is the propriety of an object to occupy a certain volume. Lack of object is also space. Therefore, space is the content as well as the container, limited from one another by chemical bonds that creates explicit materiality. Space exists because you can overlay objects, each of them occupying a definite space. But in video game, this is not the case any more. Script, collider, rigidbody can try to copy the real but this state depends only on arbitrary laws put in place by game developer within a game engine. At the basis of each primitive, there is only a transform and a renderer.
+
+
 ## Feb 26th, 2018 (suite)
 
 The game is divided in a prelude and an opera.
