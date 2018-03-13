@@ -1,6 +1,71 @@
 # cart415 - PROCESS JOURNAL
 this repo holds sam's attempts to dive into game design.
 
+## March 13th, 2018
+
+I decided to push the generative prototype forward. Though after some research, I realized that implementing a genetic algorithm using Karl Sims' documentation would take to much time. So I will fake it. I downloaded therefore the Character files from the Standard Assets and added elements of the TANKS! game to Ethan, Unity basic character model. Once the tank pieces are animated through the humanoid movement, it is rather compelling.
+
+I just don’t no yet, where I am going for with it. I think that transforming the tank game into a philosophical discussion around 3D objects in a virtual world, still appeals to me.
+
+I wonder if having an interactive discussion with the new characters made of tanks could be interesting. The rabbit hole (Alice in wonderland style) appears as a potential end to the game.
+
+yes let’s try this. back soon.
+
+Dialogue test:
+
+- I think therefore I am.
+- Yeah definitely!
+- Yeah, sounds so good!
+- 1.Who said that?  2. I think Godot said that!
+- It’s Descartes.
+- (Yeah, get your shit right..)
+- So.. what was I saying.
+- You were talking about representation in 3D space.
+- Oh yeah, right…
+- So here we are, tree, I mean four iterations of a tank.
+- Yeah, we are a f***ing metonymy. 2. Yeah we are dismantled tank, but still a tank.
+- So right.
+- So true.
+- Everytime a player loads the game we look similar, but we are always unique. Stored in a very specific place in the memory of this machine. Some specific series of numbers.
+- I mean, we are almost human.
+- Yeah, I think we are.
+- Virtual doesn’t mean anything anymore.
+- Yeah, virtual is the new real.
+- And virtual is so much better!
+- 1.Sky is the limit. 2. Virtual is so fresh. 3. You can say whatever you want in here! No constraints, no rules, no nothing.
+- Yeah.
+- Yeah..
+- Ok gang, I’m gonna show you something edgy. Are you down?
+- Cool!
+- Sounds like a plan.
+- Sure. 2. Definitely joining!
+- Okay, follow me.
+
+*Then they walk for a bit on the map.*
+
+- So here, we are.
+- Oooooh.
+- Shit!
+- This is a hole. A hole to where? I don’t. But I think we should look at it.
+- Oooouh, spooky.
+- That’s what I thought first, but then I realized that if there was something bad in this hole, there would have been a security cordon.
+- True.
+- Smart.
+- Though, I think I am not the right person to go inside. I am subject to heart attack.
+- Oh shit, I didn’t know.
+- Yeah, doesn’t make much sense to send you.
+- Yeah, you shouldn’t. 2. We should send somebody else.
+- We should send the send the bravest one..
+- Yeah!
+- Good idea!
+- I think our friend, here, could do it. Don’t you?
+- 1. Sure, I don’t have much to lose anyway. 2. Last time I went to the doctor, my heart was still doing well. 3. As far as I know, heart attack is not in my genotype.
+- Good, I guess, you should jump then. Let us know what you see once you are down there.
+- Got it! See yaaaaaa! 2. Yeah, crystal clear. 3. Yes Sir!
+
+*And then you jump..*
+
+
 ## March 12th, 2018
 *Ideas becoming clearer*
 1. On copying and reproduction. Like Pippin said in class, the idea of reproducing perfectly an object in game is futile since it requires only the act of copy-pasting. But at the same time, “copy-pasting” is part of many art practice in a way. Pop art, for instance, would reuse the exact same imagery of pop culture to constate the consumerist society. Blur the boundaries between commodity and art. Between factory workers and artists. Here, I could redo tank game from scratch. And exhibit this world in construction.  
@@ -46,6 +111,7 @@ Let me bring you to the test lab. It looks a bit like Einstein
 - game if to move object around to find your way out. Bit like the museum of digital technology
 
 *Ideas on 3D objects*
+
 Space is the propriety of an object to occupy a certain volume. Lack of object is also space. Therefore, space is the content as well as the container, limited from one another by chemical bonds that creates explicit materiality. Space exists because you can overlay objects, each of them occupying a definite space. But in video game, this is not the case any more. Script, collider, rigidbody can try to copy the real but this state depends only on arbitrary laws put in place by game developer within a game engine. At the basis of each primitive, there is only a transform and a renderer.
 
 

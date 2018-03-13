@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\AudioClips\SwitchScene_mother.cs" />
+     <Compile Include="Assets\DialogueManager.cs" />
      <Compile Include="Assets\EnvCollision.cs" />
      <Compile Include="Assets\GameManagerGlass.cs" />
      <Compile Include="Assets\NoteCollision.cs" />
@@ -59,6 +60,7 @@
      <Compile Include="Assets\Scripts\Camera\CameraControl_void.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraControl_void1.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraControl_zoom.cs" />
+     <Compile Include="Assets\Scripts\EthanScript.cs" />
      <Compile Include="Assets\Scripts\Line.cs" />
      <Compile Include="Assets\Scripts\Managers\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Managers\CameraManager_mother.cs" />
