@@ -1,5 +1,17 @@
 # cart415 - PROCESS JOURNAL
 this repo holds sam's attempts to dive into game design.
+## March 16th, 2018
+
+This kind of conversation game, this is really, what I would like to do in the future. I feel good doing it with TANKS! now. 
+
+I added the colored outline shader in order to understand who is speaking. I will manage to turn it on and off in sync with the respective dialogue. So it’s even clearer.
+
+I created the rabbit hole, in which the user jump at the end of the game. I am still wondering if it would be too cheesy to finish the game when the character jump or if it would be appropriate with the concept of reality versus virtual.
+
+Also I found one of the rough prototype I did a week ago on the the player in a market place, shopping for miniature tanks. And I think that could be a good ending for the game. The user falls into the hole, which rotates to an horizontal perspective, and ends up in a supermarket.
+
+Now the NavMesh are not moving in the right direction.. I still need to fix that.
+
 
 ## March 13th, 2018
 
