@@ -1,11 +1,25 @@
 # cart415 - PROCESS JOURNAL
 this repo holds sam's attempts to dive into game design.
 
+## March 19th, 2018
+
+The final prototype is now built. This one is closer to what I aim as a potential game/interactive experience developer than the two previous ones. I feel that the sound is particularly interesting in this work. I produced a simple ambient soundtrack in Ableton Live for the first scene using principles of dark techno music and I found a free sample of audio recorded in a grocery store for the second scene. The contrast between both tracks reveal something uncanny about the whole. Like if one was in a dream.
+
+
+*Description*
+This prototype exhibits a first-person perspective of a discussion between four creatures composed of different tanks' parts. One of them leads the conversation, talking about identity, real and virtual. Here the 3D objects speak up about their situation. This game is for them to express themselves, not for the player. The player is part of the discussion, certainly, but does s/he really have autonomy in this world praising freedom?
+
+
+* Press SPACE when you are done reading a bit of dialogue.
+
+
+
+
 ## March 18th, 2018
 
 The navmesh is working finally in sync with the animator. The first scene is almost done. I just need to add the "beauty" component (aesthetic coherence) and the sounds.
 
-This prototype became a bit weird. But I feel that after listening the distorted tanks discussing about humanity, it makes sense to end up in the alley of a super market. It acts as a balm of oblivion. The music in this scene will be oddly soft and gentle. In contrast to the first scene, in which techno is playing.
+This prototype became a bit weird. But I feel that after listening the distorted tanks discussing about humanity, it makes sense to end up in the alley of a super market. It acts as a balm of oblivion. The music in this scene will be oddly soft and gentle. In contrast to the first scene, in which dark techno is playing.
 
 ## March 16th, 2018
 

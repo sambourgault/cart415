@@ -11,6 +11,8 @@ public class DialogueManager : MonoBehaviour {
 	public GameObject[] tanks;
 	public NavMeshAgent[] agents;
 	public GameObject dest;
+	public Image image;
+	public Text Title; 
 
 
 	string[] dialogue;
@@ -34,6 +36,8 @@ public class DialogueManager : MonoBehaviour {
 	public bool pathReached;
 	public bool canMove;
 	public Quaternion rot;
+
+	private bool title;
 
 	//state machines
 	public enum MoveFSM{
@@ -61,12 +65,14 @@ public class DialogueManager : MonoBehaviour {
 		dialogueCounter = 0;
 		once = true;
 		frame = 0;
-		timeInDialogue = 10;
+		timeInDialogue = 200;
 		//NavMeshAgent agents = GetComponent<NavMeshAgent>()[3];
 		animator = ethan.GetComponent<Animator> ();
 
 		speedId = Animator.StringToHash ("Speed");
 		rotateId = Animator.StringToHash ("Angle");
+
+		title = true;
 
 		//agent = GetComponent<NavMeshAgent> ();
 		canMove = true;
@@ -87,7 +93,7 @@ public class DialogueManager : MonoBehaviour {
 		dialogue [10] = "(1) Yeah, we are a f***ing metonymy. \n(2) Yeah we are dismantled tanks, but still tanks.";
 		dialogue [11] = "So right.";
 		dialogue [12] = "So true.";
-		dialogue [13] = "Everytime a player loads the game we look similar, but we are always unique. Stored in a very specific place in the memory of this machine. Some specific series of numbers. ";
+		dialogue [13] = "Everytime a player loads the game we look similar, but we are always unique. Stored in a very specific place in the memory of this machine. A specific series of numbers. ";
 		dialogue [14] = "I mean, we are almost human.";
 		dialogue [15] = "Yeah, I think we are. ";
 		dialogue [16] = "Virtual doesn’t mean anything anymore. ";
@@ -104,109 +110,118 @@ public class DialogueManager : MonoBehaviour {
 		dialogue [27] = "So here, we are.";
 		dialogue [28] = "Oooooh.";
 		dialogue [29] = "Shit!";
-		dialogue [30] = "This is a hole. A hole to where? I don’t. But I think we should look at it.";
-		dialogue [31] = "Oooouh, spooky. ";
-		dialogue [32] = "That’s what I thought first, but then I realized that if there was something bad in this hole, there would have been a security cordon."; 
+		dialogue [30] = "This is a hole. A hole to where? I don’t know. But I think we should look at it.";
+		dialogue [31] = "Oooooh, spooky. ";
+		dialogue [32] = "That’s what I thought first, but then I realized that if there was something bad in this hole, there would be a security cordon."; 
 		dialogue [33] = "True.";
 		dialogue [34] = "Smart.";
 		dialogue [35] = "Though, I think I am not the right person to go inside. I am subject to heart attack.";
-		dialogue [36] = "Oh shit, I didn’t know.";
+		dialogue [36] = "Oh shit, I didn’t know!";
 		dialogue [37] = "Yeah, doesn’t make much sense to send you.";
-		dialogue [38] = "(1)Yeah, you shouldn’t. (2) We should definitely send somebody else.";
-		dialogue [39] = "We should send the send the bravest one..";
+		dialogue [38] = "(1)Yeah, you shouldn’t go. \n(2) We should definitely send somebody else.";
+		dialogue [39] = "We should send the braver one..";
 		dialogue [40] = "Yeah!";
 		dialogue [41] = "Good idea!";
 		dialogue [42] = "I think our friend, here, could do it. Don’t you?";
-		dialogue [43] = "(1)Sure, I don’t have much to lose anyway. (2) Last time I went to the doctor, my heart was still doing well. (3) As far as I know, heart attack is not in my genotype.";
+		dialogue [43] = "(1)Sure, I don’t have much to lose anyway. \n(2) Last time I went to the doctor, my heart was still doing well.";
 		dialogue [44] = "Good, I guess, you should jump then. Let us know what you see once you are down there.";
-		dialogue [45] = "(1) Got it! See yaaaaaa! (2) Yeah, crystal clear. (3) Yes Sir!";
+		dialogue [45] = "(1) Got it! See yaaaaaa! \n(2) Yeah, crystal clear.";
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		if (dialogueCounter == 0 || dialogueCounter == 4 || dialogueCounter == 6 || dialogueCounter == 9 || dialogueCounter == 13 || dialogueCounter == 16 || dialogueCounter == 22 || dialogueCounter == 26) {
-			text.color = Color.red;
-		} else if (dialogueCounter == 1 || dialogueCounter == 5 || dialogueCounter == 7 || dialogueCounter == 11 || dialogueCounter == 14 || dialogueCounter == 17 || dialogueCounter == 20 || dialogueCounter == 24){
-			text.color = Color.yellow;
-		} else if (dialogueCounter == 2 || dialogueCounter == 8 || dialogueCounter == 12 || dialogueCounter == 15 || dialogueCounter == 18 || dialogueCounter == 21 || dialogueCounter == 23){
-			text.color = Color.green;
-		} else if (dialogueCounter == 3 || dialogueCounter == 10 || dialogueCounter == 19 || dialogueCounter == 25 || dialogueCounter == 38 || dialogueCounter == 43 || dialogueCounter == 45){
-			text.color = Color.white;
-		}
+		if (title) {
+			if (Time.frameCount > 200) {
+				//canvas.enabled = false;
+				image.CrossFadeAlpha(0f,1f,true);
+				Title.enabled = false;
+				title = false;
+			}
+		} else {
+
+			if (dialogueCounter == 0 || dialogueCounter == 4 || dialogueCounter == 6 || dialogueCounter == 9 || dialogueCounter == 13 || dialogueCounter == 16 || dialogueCounter == 22 || dialogueCounter == 26 || dialogueCounter == 27 || dialogueCounter == 30 || dialogueCounter == 32 || dialogueCounter == 35 || dialogueCounter == 39 || dialogueCounter == 42 || dialogueCounter == 44) {
+				text.color = Color.red;
+			} else if (dialogueCounter == 1 || dialogueCounter == 5 || dialogueCounter == 7 || dialogueCounter == 11 || dialogueCounter == 14 || dialogueCounter == 17 || dialogueCounter == 20 || dialogueCounter == 24 || dialogueCounter == 28 || dialogueCounter == 33 || dialogueCounter == 37 || dialogueCounter == 40) {
+				text.color = Color.yellow;
+			} else if (dialogueCounter == 2 || dialogueCounter == 8 || dialogueCounter == 12 || dialogueCounter == 15 || dialogueCounter == 18 || dialogueCounter == 21 || dialogueCounter == 23 || dialogueCounter == 29 || dialogueCounter == 31 || dialogueCounter == 34 || dialogueCounter == 36 || dialogueCounter == 41) {
+				text.color = Color.green;
+			} else if (dialogueCounter == 3 || dialogueCounter == 10 || dialogueCounter == 19 || dialogueCounter == 25 || dialogueCounter == 38 || dialogueCounter == 43 || dialogueCounter == 45) {
+				text.color = Color.white;
+			}
 
 
-		if (dialogueCounter == 3 || dialogueCounter == 10 || dialogueCounter == 19 || dialogueCounter == 25 || dialogueCounter == 38 || dialogueCounter == 43 || dialogueCounter == 45)  {
-			if (once) {
-				text.text = string.Empty;
-				textPlayer.color = Color.white;
-				textPlayer.text = dialogue [dialogueCounter];
-				if (Input.GetButtonDown ("One") || Input.GetButtonDown ("Two")) {
-					once = false;
-					frame = Time.frameCount;
-					string[] temp = dialogue [dialogueCounter].Split ("\n" [0]);
-					//Debug.Log ("temp0: " + temp[0]);
-					//Debug.Log ("temp1: " + temp[1]);
-					if (Input.GetButtonDown ("One")) {
-						textPlayer.text = string.Empty;
-						string[] temp0 = temp [0].Split ("(1)" [2]);
-						Debug.Log ("temp0 0: " + temp0[0]);
-						Debug.Log ("temp0 1: " + temp0[1]);
-						text.text = temp0 [1];
+			if (dialogueCounter == 3 || dialogueCounter == 10 || dialogueCounter == 19 || dialogueCounter == 25 || dialogueCounter == 38 || dialogueCounter == 43 || dialogueCounter == 45) {
+				if (once) {
+					text.text = string.Empty;
+					textPlayer.color = Color.white;
+					textPlayer.text = dialogue [dialogueCounter];
+					if (Input.GetButtonDown ("One") || Input.GetButtonDown ("Two")) {
+						once = false;
+						frame = Time.frameCount;
+						string[] temp = dialogue [dialogueCounter].Split ("\n" [0]);
+						//Debug.Log ("temp0: " + temp[0]);
+						//Debug.Log ("temp1: " + temp[1]);
+						if (Input.GetButtonDown ("One")) {
+							textPlayer.text = string.Empty;
+							string[] temp0 = temp [0].Split ("(1)" [2]);
+							Debug.Log ("temp0 0: " + temp0 [0]);
+							Debug.Log ("temp0 1: " + temp0 [1]);
+							text.text = temp0 [1];
 
-					} else if (Input.GetButtonDown ("Two")) {
-						textPlayer.text = string.Empty;
-						string[] temp1 = temp [1].Split ("(2)" [2]);
-						//Debug.Log ("temp1 0: " + temp1[0]);
-						//Debug.Log ("temp1 1: " + temp1[1]);
-						text.text = temp1 [1];
+						} else if (Input.GetButtonDown ("Two")) {
+							textPlayer.text = string.Empty;
+							string[] temp1 = temp [1].Split ("(2)" [2]);
+							//Debug.Log ("temp1 0: " + temp1[0]);
+							//Debug.Log ("temp1 1: " + temp1[1]);
+							text.text = temp1 [1];
+						}
 					}
 				}
 			}
-		}
 
-		Debug.Log ("counter: " + dialogueCounter);
-		Debug.Log("once: " + once );
+			Debug.Log ("counter: " + dialogueCounter);
+			Debug.Log ("once: " + once);
 	
-		if (!once) {
-			if (Time.frameCount - frame == timeInDialogue){
-				Debug.Log("plus counter");
-				dialogueCounter++;
-				frame = Time.frameCount;
+			if (!once && dialogueCounter != 46) {
+				if (Time.frameCount - frame == 50) { // || Input.GetKeyDown(KeyCode.Space)){
+					Debug.Log ("plus counter");
+					dialogueCounter++;
+					frame = Time.frameCount;
+				} 
+			} else if (dialogueCounter == 46) {
+				text.text = string.Empty;
 			}
-		}
 
-		if (dialogueCounter != 3 && dialogueCounter != 10 && dialogueCounter != 19 && dialogueCounter != 25 && dialogueCounter != 27 && dialogueCounter != 38 && dialogueCounter != 43 && dialogueCounter != 45 && dialogueCounter != 46){
-			once = true;
-			text.text = dialogue [dialogueCounter];
-			if (Time.frameCount - frame == timeInDialogue){
-				dialogueCounter++;
-				frame = Time.frameCount;
-			}
-		} else if (dialogueCounter == 27){
-			int arrival = 0;
-			text.text = string.Empty;
-			for (int i = 0; i < tanks.Length; i++) {
-				tanks[i].GetComponent<GoTo> ().interactionPossible = true;
-				if (tanks [i].GetComponent<GoTo> ().pathReached) {
-					arrival++;
+			if (dialogueCounter != 3 && dialogueCounter != 10 && dialogueCounter != 19 && dialogueCounter != 25 && dialogueCounter != 27 && dialogueCounter != 38 && dialogueCounter != 43 && dialogueCounter != 45 && dialogueCounter != 46) {
+				once = true;
+				text.text = dialogue [dialogueCounter];
+				if (Time.frameCount - frame == timeInDialogue || Input.GetKeyDown (KeyCode.Space)) {
+					dialogueCounter++;
+					frame = Time.frameCount;
 				}
-				//Debug.Log ("navmesh");
-				//GetInteraction ();
-				//agents [i].SetDestination(new Vector3 (38.0f, -1.6f, -38.0f));
-				//tanks [i].GetComponent<Animator> ().SetBool ("Walk", true);
-				/*if (agents [i].pathStatus == NavMeshPathStatus.PathComplete) {
-					arrival++;
-				}*/
+			} else if (dialogueCounter == 27) {
+				if (once) {
+					int arrival = 0;
+					text.text = string.Empty;
+					for (int i = 0; i < tanks.Length; i++) {
+						tanks [i].GetComponent<GoTo> ().interactionPossible = true;
+						if (tanks [i].GetComponent<GoTo> ().pathReached) {
+							arrival++;
+						}
+					}
+
+					if (arrival == 3) {
+						once = false;
+						frame = Time.frameCount;
+						dialogueCounter++;
+					}
+				}
 			}
 
-			if (arrival == 3) {
-				dialogueCounter++;
-			}
+			//MoveStates ();
 		}
-
-		//MoveStates ();
 	}
 
 	/*public void MoveStates(){
