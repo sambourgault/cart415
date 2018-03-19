@@ -1,14 +1,15 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/DialogueManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/HitPlane.cs">
     <Files>
+      <File FileName="Assets/HitPlane.cs" Line="17" Column="36" />
       <File FileName="Assets/Scripts/NavMesh.cs" Line="1" Column="1" />
       <File FileName="Assets/DialogueManager.cs" Line="94" Column="31" />
       <File FileName="Assets/GoTo.cs" Line="1" Column="1" />
-      <File FileName="Assets/FallingHole.cs" Line="22" Column="31" />
+      <File FileName="Assets/FallingHole.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Managers/SwitchScene.cs" Line="1" Column="1" />
-      <File FileName="Assets/HitPlane.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Oscillatorright.cs" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
