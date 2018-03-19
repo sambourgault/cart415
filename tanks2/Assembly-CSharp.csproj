@@ -49,7 +49,9 @@
      <Compile Include="Assets\AudioClips\SwitchScene_mother.cs" />
      <Compile Include="Assets\DialogueManager.cs" />
      <Compile Include="Assets\EnvCollision.cs" />
+     <Compile Include="Assets\FallingHole.cs" />
      <Compile Include="Assets\GameManagerGlass.cs" />
+     <Compile Include="Assets\GoTo.cs" />
      <Compile Include="Assets\NoteCollision.cs" />
      <Compile Include="Assets\RecorderMotion.cs" />
      <Compile Include="Assets\SceneCounter.cs" />
@@ -61,6 +63,9 @@
      <Compile Include="Assets\Scripts\Camera\CameraControl_void1.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraControl_zoom.cs" />
      <Compile Include="Assets\Scripts\EthanScript.cs" />
+     <Compile Include="Assets\Scripts\IntChest.cs" />
+     <Compile Include="Assets\Scripts\Interactable.cs" />
+     <Compile Include="Assets\Scripts\Inventory.cs" />
      <Compile Include="Assets\Scripts\Line.cs" />
      <Compile Include="Assets\Scripts\Managers\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Managers\CameraManager_mother.cs" />
@@ -74,6 +79,7 @@
      <Compile Include="Assets\Scripts\Managers\SwitchScene_traffic.cs" />
      <Compile Include="Assets\Scripts\Managers\TankAiManager.cs" />
      <Compile Include="Assets\Scripts\Managers\TankManager.cs" />
+     <Compile Include="Assets\Scripts\NavMesh.cs" />
      <Compile Include="Assets\Scripts\Oscillator.cs" />
      <Compile Include="Assets\Scripts\Oscillator1.cs" />
      <Compile Include="Assets\Scripts\Oscillator2.cs" />
@@ -95,14 +101,6 @@
      <Compile Include="Assets\TankCollision.cs" />
      <Compile Include="Assets\TowardCamAi.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\TutorialInfo.cs" />
-     <Compile Include="Assets\_Completed-Assets\Scripts\Camera\CameraControl.cs" />
-     <Compile Include="Assets\_Completed-Assets\Scripts\Managers\GameManager.cs" />
-     <Compile Include="Assets\_Completed-Assets\Scripts\Managers\TankManager.cs" />
-     <Compile Include="Assets\_Completed-Assets\Scripts\Shell\ShellExplosion.cs" />
-     <Compile Include="Assets\_Completed-Assets\Scripts\Tank\TankHealth.cs" />
-     <Compile Include="Assets\_Completed-Assets\Scripts\Tank\TankMovement.cs" />
-     <Compile Include="Assets\_Completed-Assets\Scripts\Tank\TankShooting.cs" />
-     <Compile Include="Assets\_Completed-Assets\Scripts\UI\UIDirectionControl.cs" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\Shader\Outline.shader" />
@@ -130,9 +128,11 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
      <None Include="Assets\AudioClips\9512__carlos-vaquero__violin-single-notes-tenuto-vibrato-g4-g5\_readme_and_license.txt" />
+     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
+     <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
@@ -141,6 +141,7 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />
+     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Luminance.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
@@ -177,6 +178,7 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
      <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
+     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />

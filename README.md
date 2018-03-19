@@ -1,8 +1,15 @@
 # cart415 - PROCESS JOURNAL
 this repo holds sam's attempts to dive into game design.
+
+## March 18th, 2018
+
+The navmesh is working finally in sync with the animator. The first scene is almost done. I just need to add the "beauty" component (aesthetic coherence) and the sounds.
+
+This prototype became a bit weird. But I feel that after listening the distorted tanks discussing about humanity, it makes sense to end up in the alley of a super market. It acts as a balm of oblivion. The music in this scene will be oddly soft and gentle. In contrast to the first scene, in which techno is playing.
+
 ## March 16th, 2018
 
-This kind of conversation game, this is really, what I would like to do in the future. I feel good doing it with TANKS! now. 
+This kind of conversation game, this is really, what I would like to do in the future. I feel good doing it with TANKS! now.
 
 I added the colored outline shader in order to understand who is speaking. I will manage to turn it on and off in sync with the respective dialogue. So it’s even clearer.
 
