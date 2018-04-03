@@ -1,6 +1,30 @@
 # cart415 - PROCESS JOURNAL
 this repo holds sam's attempts to dive into game design.
 
+## April 3rd, 2018
+
+Okay, so what now?
+
+Now I will go over each prototype and confront Pippin's and other's comments. The play testing periods were eye-opening, as they helped me realize some problems while analyzing the behavior of the play testers.
+
+*Lights and Camera*
+**From Pippin's comments**
+- slow the rapid cuts in the scene before 'god'  
+- add more time to traffic feels like it could be sustained longer and the other scenes that doesn't seem long enough to grasp what is happening.
+- clarifying the ending in 'god'.
+- pre-programmed the 'random' nature of the growth
+
+In light of Pippin's comment, I find the major problem being the ending (same problem happens in prototype II). I first thought that leaving the players decide when they want to quit the game was the way to go with. Maybe certain doubts about the value of my games made me think the former. I ended the last prototype in a collision with a emissive wall at the end of a corridor. This biblical way to end the 'game' fits well the strange world that I put in place along the prototypes. Therefore, referring to my earlier tanks game on 3D objects, I want something similar here.
+
+ ## March 31th, 2018
+
+In the process of building a menu for the game. I thought about creating stand alone games for the three prototypes first, but I feel all these experimentations I made along the semester will get lost if I don't reunite them. Also this compilation will reduce the amount of download one has to do to play the games, which fits my minimalistic view of computer usage.
+
+The menu is simple. It reuses the "TankRotate" (as named in my prefabs folder), a white tank rotating endlessly in circle. Like if life was that simple.. This tank comes from "the void" chapter of my first game on lights and camera and gives the tone of all the other games in which the player could engage with.
+
+I separated renamed the three prototypes as *introspection* for the game on light and camera, *instruction* for the game on sound and *discussion* for the game on 3D objects.    
+
+
 ## March 19th, 2018
 
 The final prototype is now built. This one is closer to what I aim as a potential game/interactive experience developer than the two previous ones. I feel that the sound is particularly interesting in this work. I produced a simple ambient soundtrack in Ableton Live for the first scene using principles of dark techno music and I found a free sample of audio recorded in a grocery store for the second scene. The contrast between both tracks reveal something uncanny about the whole. Like if one was in a dream.

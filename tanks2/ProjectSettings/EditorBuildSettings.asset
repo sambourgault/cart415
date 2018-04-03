@@ -7,23 +7,25 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: Assets/Complete/Scenes/CompleteMainScene.unity
-  - enabled: 0
-    path: Assets/Scenes/tanks_inside.unity
-  - enabled: 0
-    path: Assets/Scenes/tanks_inside2.unity
-  - enabled: 0
-    path: Assets/Scenes/tanks_void_round.unity
-  - enabled: 0
-    path: Assets/Scenes/tanks_mother.unity
-  - enabled: 0
-    path: Assets/Scenes/tanks_traffic.unity
-  - enabled: 0
-    path: Assets/Scenes/tanks_god.unity
-  - enabled: 0
-    path: Assets/Scenes/tanks_eno_ai.unity
-  - enabled: 0
-    path: Assets/Scenes/tanks_eno3.unity
   - enabled: 1
-    path: Assets/Scenes/tanks_human.unity
+    path: Assets/Scenes/menu.unity
   - enabled: 1
-    path: Assets/Scenes/tank_market.unity
+    path: Assets/Scenes/Camera/tanks_inside.unity
+  - enabled: 1
+    path: Assets/Scenes/Camera/tanks_inside2.unity
+  - enabled: 1
+    path: Assets/Scenes/Camera/tanks_void_round.unity
+  - enabled: 1
+    path: Assets/Scenes/Camera/tanks_mother.unity
+  - enabled: 1
+    path: Assets/Scenes/Camera/tanks_traffic.unity
+  - enabled: 1
+    path: Assets/Scenes/Camera/tanks_god.unity
+  - enabled: 1
+    path: Assets/Scenes/Sound/tanks_eno_ai.unity
+  - enabled: 1
+    path: Assets/Scenes/Sound/tanks_eno3.unity
+  - enabled: 1
+    path: Assets/Scenes/Objects/tanks_human.unity
+  - enabled: 1
+    path: Assets/Scenes/Objects/tank_market.unity

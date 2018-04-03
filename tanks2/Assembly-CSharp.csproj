@@ -53,6 +53,7 @@
      <Compile Include="Assets\GameManagerGlass.cs" />
      <Compile Include="Assets\GoTo.cs" />
      <Compile Include="Assets\HitPlane.cs" />
+     <Compile Include="Assets\MenuButton.cs" />
      <Compile Include="Assets\NoteCollision.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
@@ -102,6 +103,7 @@
      <Compile Include="Assets\RecorderMotion.cs" />
      <Compile Include="Assets\SceneCounter.cs" />
      <Compile Include="Assets\Scripts\AudioSourceGetSpectrumDataExample.cs" />
+     <Compile Include="Assets\Scripts\ButtonManager.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraControl.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraControl1.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraControl_traffic.cs" />

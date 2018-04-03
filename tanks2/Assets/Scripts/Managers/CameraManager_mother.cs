@@ -8,6 +8,7 @@ public class CameraManager_mother : MonoBehaviour {
 
 	public Camera mainCam;
 	public Text m_MessageText;
+	public Image panel;
 
 	private GameObject[] cameras;
 	private int currentCam;
@@ -42,11 +43,12 @@ public class CameraManager_mother : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if ((Time.frameCount - initialFrame) > 100){
+		if ((Time.frameCount - initialFrame) > 200){
 			m_MessageText.text = string.Empty;
+			panel.enabled = false;
 		}
 
-		if (Time.frameCount % 100 == 0 && (Time.frameCount- initialFrame)  > 101) {
+		if (Time.frameCount % 200 == 0 && (Time.frameCount- initialFrame)  > 201) {
 			
 			if (switchScene){
 				//load scene after the last camera
