@@ -1,6 +1,44 @@
 # cart415 - PROCESS JOURNAL
 this repo holds sam's attempts to dive into game design.
 
+## April 12th, 2018
+
+*Sound*
+**From Pippin's comments**
+- Improving globally the sense of agency for the player
+- Too much click in the prelude, it becomes annoying
+- Not clear what is the player agency in the opera
+
+Ok. That's another hard one.. How can the game be interactive. Through the mouse clicking or moving. Through the keyboard pressing. Through the camera or the microphone. So how should I use these physical/mechanical elements to trigger a compelling interactive experience for the player?
+
+brainstroming for the Opera:
+- The player could trigger the pattern.
+- The player could make the blocs appear.
+- The player could add something new to the piece. The game could start by: "you did great in the prelude. you are in charge of the violin."
+- The player is the maestro and must count the beat out loud. Or move the arms in front of the camera.
+
+
+## April 9th, 2018. suite
+
+*3D Objects*
+**From Pippin's comments**
+- Better sense of ending.
+- Pimp the level.
+- Create a sense of where the creatures are coming from.
+- Increase the length of the fall.
+
+My effort will be put on the falling part of the game. I definitely want it to last longer. This exit is the death of your character but also the return into reality for the player. The sound will become louder as the player falls.
+
+I am thinking of adding some floating objects surrounding the fall like in Alice in Wonderland. Alice is falling into her imaginary world, I want the player to ask her/himself what is the difference between her/his world and the one s/he is leaving.
+
+
+## Aril 9th, 2018
+The ending. I want to improve my sense of ending.. In my previous prototypes I tended to let the game live as long as the player wanted to. Maybe because of laziness or lack of idea. Here is what I consider to conclude every prototypes.
+
+- Light and Camera: The final scene is "the god" scene. It ends with the player playing the god for this bunch of tanks that are following her/his movements. There could be a literal end to the space (colliders) and when you cross them you go back to the menu.
+- Sound: ...
+- 3D Objects: The link between the "market" world and the "human tanks" world is weak. Also, the hole could be a good opportunity to finish the game on a high note. The music could change (I imagine an elevator music), but even the elevator music could become weaker and weaker as the player falls. Until, the player knows that it is the end and "escape" from it.
+
 ## April 3rd, 2018
 
 Okay, so what now?
@@ -9,14 +47,14 @@ Now I will go over each prototype and confront Pippin's and other's comments. Th
 
 *Lights and Camera*
 **From Pippin's comments**
-- slow the rapid cuts in the scene before 'god'  
+- slow down the rapid cuts in the scene before 'god'  
 - add more time to traffic feels like it could be sustained longer and the other scenes that doesn't seem long enough to grasp what is happening.
-- clarifying the ending in 'god'.
+- clarifying the ending in 'god'. --> maybe the sound could get louder and louder after a certain time..??
 - pre-programmed the 'random' nature of the growth
 
 In light of Pippin's comment, I find the major problem being the ending (same problem happens in prototype II). I first thought that leaving the players decide when they want to quit the game was the way to go with. Maybe certain doubts about the value of my games made me think the former. I ended the last prototype in a collision with a emissive wall at the end of a corridor. This biblical way to end the 'game' fits well the strange world that I put in place along the prototypes. Therefore, referring to my earlier tanks game on 3D objects, I want something similar here.
 
- ## March 31th, 2018
+## March 31th, 2018
 
 In the process of building a menu for the game. I thought about creating stand alone games for the three prototypes first, but I feel all these experimentations I made along the semester will get lost if I don't reunite them. Also this compilation will reduce the amount of download one has to do to play the games, which fits my minimalistic view of computer usage.
 

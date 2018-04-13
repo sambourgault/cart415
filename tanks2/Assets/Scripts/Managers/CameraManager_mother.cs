@@ -48,7 +48,7 @@ public class CameraManager_mother : MonoBehaviour {
 			panel.enabled = false;
 		}
 
-		if (Time.frameCount % 200 == 0 && (Time.frameCount- initialFrame)  > 201) {
+		if (Time.frameCount % 400 == 0 && (Time.frameCount- initialFrame)  > 201) {
 			
 			if (switchScene){
 				//load scene after the last camera

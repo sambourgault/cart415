@@ -12,7 +12,7 @@ public class SwitchScene : MonoBehaviour {
 	public Image panel;
 
 	//public SceneCounter m_Counter;
-
+	private float beginTime = 0f;
 	private SpriteRenderer m_BlackRenderer;
 
 	//private int counterScene;
@@ -21,6 +21,7 @@ public class SwitchScene : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		m_BlackRenderer = m_Black.GetComponent<SpriteRenderer> ();
+		beginTime = Time.frameCount;
 		//Debug.Log ("counter: " + counterScene);
 		//counterScene = m_Counter.counter;
 	}
@@ -29,7 +30,7 @@ public class SwitchScene : MonoBehaviour {
 	void Update () {
 		//float newAlpha = Mathf.Lerp (0, 100, Mathf.InverseLerp (0.5f, 60f, m_Camera.fieldOfView));
 		//Debug.Log (newAlpha);
-		if (Time.frameCount > 310) {
+		if ((Time.frameCount - beginTime) > 210) {
 
 			float newAlpha = m_Camera.fieldOfView / 60f;
 
@@ -40,9 +41,9 @@ public class SwitchScene : MonoBehaviour {
 				SceneManager.LoadScene ("tanks_inside2");
 
 			}
-		} else if (Time.frameCount > 300 ) {
+		} else if ((Time.frameCount - beginTime) > 200 ) {
 			m_MessageText.text = string.Empty;
-		} else if (Time.frameCount > 150) {
+		} else if ((Time.frameCount - beginTime) > 0) {
 			panel.enabled = false;
 			m_MessageText.text = "the inside";
 		} 

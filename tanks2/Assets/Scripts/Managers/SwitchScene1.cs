@@ -8,8 +8,9 @@ public class SwitchScene1 : MonoBehaviour {
 	public GameObject m_Black; 
 	public GameObject m_CactusPrefab;     
 	//public SceneCounter m_Counter;
-	[HideInInspector] public GameObject[] m_Instance;  
+	//[HideInInspector] public GameObject[] m_Instance;  
 	private int counterCactus = 0;
+	public GameObject[] cactus;
 
 	private SpriteRenderer m_BlackRenderer;
 	private float initialFOV;
@@ -20,7 +21,7 @@ public class SwitchScene1 : MonoBehaviour {
 	void Start () {
 		m_BlackRenderer = m_Black.GetComponent<SpriteRenderer> ();
 		initialFOV = m_Camera.fieldOfView;
-		m_Instance = new GameObject[20];
+		//m_Instance = new GameObject[20];
 		//Debug.Log ("counter: " + counterScene);
 		//counterScene = m_Counter.counter;
 	}
@@ -46,11 +47,11 @@ public class SwitchScene1 : MonoBehaviour {
 			newAlpha = 1f;
 			m_BlackRenderer.color = new Color(1f, 1f, 1f, newAlpha);
 			m_Camera.fieldOfView = initialFOV;
+			cactus [counterCactus].GetComponent<Renderer>().enabled = true;
 
-
-			m_Instance[counterCactus] = Instantiate(m_CactusPrefab, new Vector3(Random.Range(-1.5f, 1.5f), 0f, Random.Range(-2.5f, 0.5f)), Quaternion.Euler(0f, Random.Range(0f, 359f), 0f)) as GameObject;
-			float randomScale = (counterCactus+1f)/7f + Random.Range (3f, 4f)/10f;
-			m_Instance [counterCactus].transform.localScale = new Vector3 (randomScale, randomScale, randomScale);
+			//m_Instance[counterCactus] = Instantiate(m_CactusPrefab, new Vector3(Random.Range(-1.5f, 1.5f), 0f, Random.Range(-2.5f, 0.5f)), Quaternion.Euler(0f, Random.Range(0f, 359f), 0f)) as GameObject;
+			//float randomScale = (counterCactus+1f)/7f + Random.Range (3f, 4f)/10f;
+			//m_Instance [counterCactus].transform.localScale = new Vector3 (randomScale, randomScale, randomScale);
 			counterCactus++;
 			//if (counterScene)
 			//counterScene++;

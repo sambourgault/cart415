@@ -24,7 +24,7 @@ public class FallingHole : MonoBehaviour {
 		//panel.color.a = Mathf.InverseLerp (-30f, 0f, transform.position.y);
 
 		if (transform.position.y < -30f){
-			SceneManager.LoadScene ("tank_market");
+			//SceneManager.LoadScene ("tank_market");
 			
 		}
 		

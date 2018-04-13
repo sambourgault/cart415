@@ -29,7 +29,7 @@ public class SwitchScene_traffic : MonoBehaviour {
 		}
 
 		// load new scene after a certain amount of frames
-		if ((Time.frameCount - initialFrame)  > 1100) {
+		if ((Time.frameCount - initialFrame)  > 2100) {
 			SceneManager.LoadScene ("tanks_god");
 		}
 
