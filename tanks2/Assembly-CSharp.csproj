@@ -120,6 +120,7 @@
      <Compile Include="Assets\Scripts\Managers\DontDestroy.cs" />
      <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
      <Compile Include="Assets\Scripts\Managers\GameManagerEno.cs" />
+     <Compile Include="Assets\Scripts\Managers\GameManagerEnoForOpera.cs" />
      <Compile Include="Assets\Scripts\Managers\GameManager_mother.cs" />
      <Compile Include="Assets\Scripts\Managers\GameManager_void.cs" />
      <Compile Include="Assets\Scripts\Managers\SwitchScene.cs" />

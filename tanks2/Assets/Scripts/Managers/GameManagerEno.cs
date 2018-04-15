@@ -66,7 +66,7 @@ public class GameManagerEno : MonoBehaviour {
 
 		
 
-			if (Input.GetMouseButtonDown (0) && tankCounter < 100) {
+			if (Input.GetMouseButtonDown (0) && tankCounter < 40) {
 				m_Tanks [tankCounter].m_Instance =
 				Instantiate (m_TankPrefab, m_Tanks [0].m_SpawnPoint.position, m_Tanks [0].m_SpawnPoint.rotation) as GameObject;
 				m_Tanks [tankCounter].Setup ();
@@ -77,7 +77,7 @@ public class GameManagerEno : MonoBehaviour {
 		}
 			
 
-		if (tankCounter >= 99) {
+		if (tankCounter >= 39) {
 			if (beginingOfEnd) {
 				panel.canvasRenderer.SetAlpha(0.01f);
 				//panel.CrossFadeAlpha (0f, 0f, false);

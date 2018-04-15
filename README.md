@@ -1,6 +1,12 @@
 # cart415 - PROCESS JOURNAL
 this repo holds sam's attempts to dive into game design.
 
+## April 15th, 2018
+
+In the opera part of the sound prototype, I added some violin so the player who practice during the prelude can show off her/his new skills to the world. I think is a coherent follow up to the first part of this prototype. Maybe I will come up with something better. Will see.
+
+I am very happy with the end of that prototype. I think it is interesting to have one tank (the one attached to the camera) being blocked by a box collider. This ending makes me want to explore further how basic elements of the game engine can support narrative and get out of their solely functional role. 
+
 ## April 12th, 2018
 
 *Sound*
@@ -14,8 +20,9 @@ Ok. That's another hard one.. How can the game be interactive. Through the mouse
 brainstroming for the Opera:
 - The player could trigger the pattern.
 - The player could make the blocs appear.
-- The player could add something new to the piece. The game could start by: "you did great in the prelude. you are in charge of the violin."
+- The player could add something new to the piece. The game could start by: "you did great in the prelude. you are in charge of the violin." So I could add tanks in the air that can be dropped and their sound can be added to the final piece.
 - The player is the maestro and must count the beat out loud. Or move the arms in front of the camera.
+- I could remove some of clic in the first part, so it is not as annoying.
 
 
 ## April 9th, 2018. suite
