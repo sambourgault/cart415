@@ -1,11 +1,35 @@
 # cart415 - PROCESS JOURNAL
 this repo holds sam's attempts to dive into game design.
 
+## April 29th, 2018
+
+This remake of TANKS! has been a real challenge for me. I learned a lot. And really enjoyed exploring the references people put on the github.
+
+Here is what I changed since the full prototypes to complete the released version:
+
+- Add a menu to gather all the prototypes together.
+- Add the relation between the scene and the menu: when the scene is done or escape to go back to the menu.
+
+*Camera and Lights*
+- Adjust the timing between the scenes: I realized I was using Time.framecount for the timing instead of Time.fixedTime, so faster computer then mine.. pretty much all of them.. would run my game too fast!
+- Modify the ending of the god: when you hit a dark wall, you see your own spotlight (like a light at the end of the tunnel) and you suddenly go back to the menu.
+- Position the cactus in the inside properly instead of randomly.
+
+*Sound*
+- Add few violin part in the opera.
+- Shorten the prelude, so the player doesn't rage on the mouse.
+
+*3D object*
+- Remove the last scene (the market) and replaced it by images taken from the news that represent better where the player is going once s/he falls in the hole.
+- Change a little bit the appearance of it using post-processing.
+
+
+
 ## April 15th, 2018
 
 In the opera part of the sound prototype, I added some violin so the player who practice during the prelude can show off her/his new skills to the world. I think is a coherent follow up to the first part of this prototype. Maybe I will come up with something better. Will see.
 
-I am very happy with the end of that prototype. I think it is interesting to have one tank (the one attached to the camera) being blocked by a box collider. This ending makes me want to explore further how basic elements of the game engine can support narrative and get out of their solely functional role. 
+I am very happy with the end of that prototype. I think it is interesting to have one tank (the one attached to the camera) being blocked by a box collider. This ending makes me want to explore further how basic elements of the game engine can support narrative and get out of their solely functional role.
 
 ## April 12th, 2018
 

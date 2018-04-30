@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour {
 
@@ -8,7 +9,18 @@ public class AudioManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+		/*if (SceneManager.GetActiveScene().name == "menu" ) {
 
+			Destroy (this.gameObject);
+		}*/
+	}
+
+	void Update(){
+		if (SceneManager.GetActiveScene().name == "menu" ) {
+
+			Destroy (this.gameObject);
+		}
+	
 	}
 
 	//PLay global
@@ -24,6 +36,9 @@ public class AudioManager : MonoBehaviour {
 			instance = this;
 		}
 
-		DontDestroyOnLoad (this.gameObject);
+			
+			DontDestroyOnLoad (this.gameObject);
+
+
 	}
 }

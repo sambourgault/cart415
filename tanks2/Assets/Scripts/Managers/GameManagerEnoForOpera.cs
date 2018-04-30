@@ -24,7 +24,8 @@ public class GameManagerEnoForOpera : MonoBehaviour {
 	private bool beginingOfEnd;
 	private float timeToFade;
 	float countInput = 0;
-
+	bool final = true;
+	float timeAsEnd = 0;
 
 	private void Start()
 	{
@@ -34,31 +35,41 @@ public class GameManagerEnoForOpera : MonoBehaviour {
 		beginingOfEnd = true;
 		timeToFade = 0f;
 
-		numberOfTank = m_Tanks.Length;
+		//numberOfTank = m_Tanks.Length;
+		numberOfTank = 10;
 		//SpawnAllTanks();
 
 	}
 
 	private void Update(){
 		// instantiate tanks
-		if (Input.GetMouseButtonDown (0) && tankCounter < 40 && violin) {
+		if (Input.GetMouseButtonDown (0) && violin) {
 			float temp = 0;
 			if (tankCounter % 2 == 0) {
 				temp = 180f;
 			}
 
-			if (tankCounter < numberOfTank){
-			m_Tanks [tankCounter].m_Instance =
+			if (tankCounter < numberOfTank) {
+				m_Tanks [tankCounter].m_Instance =
 				Instantiate (m_TankPrefab, new Vector3 (CamPos.transform.position.x + 50, CamPos.transform.position.y + 10, CamPos.transform.position.z + Mathf.Pow (-1, tankCounter) * 20), Quaternion.Euler (180, temp, 0)) as GameObject;
+				m_Tanks [tankCounter].Setup ();
+				m_Tanks [tankCounter].m_Audio.clip = audios [tankCounter % 5];
+				m_Tanks [tankCounter].m_Audio.Play ();
+
+			} else {
+				m_Tanks [tankCounter % numberOfTank].SetPosition (new Vector3 (CamPos.transform.position.x + 50, CamPos.transform.position.y + 10, CamPos.transform.position.z + Mathf.Pow (-1, tankCounter) * 20), Quaternion.Euler (180, temp, 0));
+				m_Tanks [tankCounter % numberOfTank].SetSpeed ();
 			}
-			m_Tanks [tankCounter % numberOfTank].Setup ();
-			m_Tanks [tankCounter % numberOfTank].m_Audio.clip = audios [tankCounter % 5];
-			m_Tanks [tankCounter % numberOfTank].m_Audio.Play ();
+
 			tankCounter++;
 		}
 
-		if (lastTank.transform.position.x > 1645) {
+		if (lastTank.transform.position.x > 1640) {
 			violin = false;
+			if (final){
+				timeAsEnd = Time.fixedTime;
+				final = false;
+			}
 		} else if (lastTank.transform.position.x > 1290) {
 			violin = true;
 		} else if (lastTank.transform.position.x > 800) {
@@ -77,6 +88,12 @@ public class GameManagerEnoForOpera : MonoBehaviour {
 			textViolin.enabled = false;
 		}
 
+
+		Debug.Log (Time.fixedTime - timeAsEnd);
+		if (!final && (Time.fixedTime - timeAsEnd) > 90f){
+			SceneManager.LoadScene ("menu");
+
+		}
 	}
 
 

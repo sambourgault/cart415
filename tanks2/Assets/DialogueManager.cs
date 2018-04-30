@@ -19,8 +19,8 @@ public class DialogueManager : MonoBehaviour {
 	int dialogueCounter;
 	int lastSentence = 0;
 	bool once;
-	int frame;
-	int timeInDialogue;
+	float frame;
+	float timeInDialogue;
 
 	//nav mesh
 	public NavMeshAgent agent;
@@ -64,8 +64,8 @@ public class DialogueManager : MonoBehaviour {
 		color = text.color;
 		dialogueCounter = 0;
 		once = true;
-		frame = 0;
-		timeInDialogue = 200;
+		frame = 0f;
+		timeInDialogue = 6f;
 		//NavMeshAgent agents = GetComponent<NavMeshAgent>()[3];
 		animator = ethan.GetComponent<Animator> ();
 
@@ -133,7 +133,7 @@ public class DialogueManager : MonoBehaviour {
 	void Update () {
 
 		if (title) {
-			if (Time.frameCount > 200) {
+			if (Time.fixedTime > 4f) {
 				//canvas.enabled = false;
 				image.CrossFadeAlpha(0f,1f,true);
 				Title.enabled = false;
@@ -159,7 +159,7 @@ public class DialogueManager : MonoBehaviour {
 					textPlayer.text = dialogue [dialogueCounter];
 					if (Input.GetButtonDown ("One") || Input.GetButtonDown ("Two")) {
 						once = false;
-						frame = Time.frameCount;
+						frame = Time.fixedTime;
 						string[] temp = dialogue [dialogueCounter].Split ("\n" [0]);
 						//Debug.Log ("temp0: " + temp[0]);
 						//Debug.Log ("temp1: " + temp[1]);
@@ -185,10 +185,10 @@ public class DialogueManager : MonoBehaviour {
 			Debug.Log ("once: " + once);
 	
 			if (!once && dialogueCounter != 46) {
-				if (Time.frameCount - frame == 50) { // || Input.GetKeyDown(KeyCode.Space)){
+				if ((int)(Time.fixedTime - frame) == 1) { // || Input.GetKeyDown(KeyCode.Space)){
 					Debug.Log ("plus counter");
 					dialogueCounter++;
-					frame = Time.frameCount;
+					frame = Time.fixedTime;
 				} 
 			} else if (dialogueCounter == 46) {
 				text.text = string.Empty;
@@ -197,9 +197,9 @@ public class DialogueManager : MonoBehaviour {
 			if (dialogueCounter != 3 && dialogueCounter != 10 && dialogueCounter != 19 && dialogueCounter != 25 && dialogueCounter != 27 && dialogueCounter != 38 && dialogueCounter != 43 && dialogueCounter != 45 && dialogueCounter != 46) {
 				once = true;
 				text.text = dialogue [dialogueCounter];
-				if (Time.frameCount - frame == timeInDialogue || Input.GetKeyDown (KeyCode.Space)) {
+				if ((int)(Time.fixedTime - frame) == timeInDialogue || Input.GetKeyDown (KeyCode.Space)) {
 					dialogueCounter++;
-					frame = Time.frameCount;
+					frame = Time.fixedTime;
 				}
 			} else if (dialogueCounter == 27) {
 				if (once) {
@@ -214,7 +214,7 @@ public class DialogueManager : MonoBehaviour {
 
 					if (arrival == 3) {
 						once = false;
-						frame = Time.frameCount;
+						frame = Time.fixedTime;
 						dialogueCounter++;
 					}
 				}

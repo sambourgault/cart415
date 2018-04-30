@@ -67,6 +67,6 @@ public class GameManagerGlass : MonoBehaviour {
 			}
 
 		}
-		
+
 	}
 }

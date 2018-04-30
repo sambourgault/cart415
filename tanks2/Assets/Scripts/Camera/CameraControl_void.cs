@@ -23,7 +23,7 @@ public class CameraControl_void : MonoBehaviour
 	private float m_VerticalValue;
 	private float m_HorizontalValue;
 
-	private int initialFrame;
+	private float initialFrame;
 
 
 	private void Awake()
@@ -38,13 +38,13 @@ public class CameraControl_void : MonoBehaviour
 	private void Start(){
 		m_VerticalMovement = "VerticalCam";
 		m_HorizontalMovement = "HorizontalCam";
-		initialFrame = Time.frameCount;
+		initialFrame = Time.fixedTime;
 	}
 
 
 	private void Update()
 	{
-		if ((Time.frameCount- initialFrame)  > 100){
+		if ((Time.fixedTime- initialFrame)  > 4f){
 			m_MessageText.text = string.Empty;
 		}
 		// Store the player's input and make sure the audio for the engine is playing.

@@ -58,6 +58,15 @@ public class TankAiManager
         m_CanvasGameObject.SetActive(true);
     }
 
+	public void SetPosition(Vector3 pos, Quaternion rot){
+		m_Instance.transform.position = pos;
+		m_Instance.transform.rotation = rot;
+	}
+
+	public void SetSpeed(){
+		m_Instance.GetComponent<Rigidbody>().velocity = Vector3.zero;
+
+	}
 
     public void Reset()
     {

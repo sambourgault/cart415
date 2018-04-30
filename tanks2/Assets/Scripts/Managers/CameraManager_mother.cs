@@ -15,7 +15,8 @@ public class CameraManager_mother : MonoBehaviour {
 	private int nextCam;
 	private bool switchScene = false;
 
-	private int initialFrame;
+	private float initialFrame;
+	int counter;
 
 	// Use this for initialization
 	void Awake() {
@@ -33,23 +34,24 @@ public class CameraManager_mother : MonoBehaviour {
 		//cameras [0].GetComponent<Camera> ().enabled = true;
 		currentCam = 0;
 		nextCam = 1;
+		counter = 1;
 		
 	}
 
 	void Start(){
-		initialFrame = Time.frameCount;
+		initialFrame = Time.fixedTime;
 
 	}
 
 	// Update is called once per frame
 	void Update () {
-		if ((Time.frameCount - initialFrame) > 200){
+		if ((Time.fixedTime - initialFrame) > 4f){
 			m_MessageText.text = string.Empty;
 			panel.enabled = false;
 		}
 
-		if (Time.frameCount % 400 == 0 && (Time.frameCount- initialFrame)  > 201) {
-			
+		if ((Time.fixedTime - initialFrame - 4f)  > 9f*counter) {
+			counter++;
 			if (switchScene){
 				//load scene after the last camera
 				SceneManager.LoadScene ("tanks_traffic");

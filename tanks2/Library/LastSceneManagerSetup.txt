@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Sound/tanks_eno3.unity
+- path: Assets/Scenes/Camera/tanks_god.unity
   isLoaded: 1
   isActive: 1

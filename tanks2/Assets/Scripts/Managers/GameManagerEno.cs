@@ -29,6 +29,7 @@ public class GameManagerEno : MonoBehaviour {
 	private bool beginingOfEnd;
 	public Image panel;
 	private float timeToFade;
+	private float beginTime;
 
 	private void Start()
 	{
@@ -40,19 +41,19 @@ public class GameManagerEno : MonoBehaviour {
 		maestroOnce	= true;
 		beginingOfEnd = true;
 		timeToFade = 0f;
-
+		beginTime = Time.fixedTime;
 
 		//SpawnAllTanks();
 
 	}
 
 	private void Update(){
-		if (Time.frameCount > 150) {
+		if (Time.fixedTime - beginTime > 4f) {
 			title = false;
 		} 
 
 		if (title) {
-			if (maestroOnce && Time.frameCount > 50) {
+			if (maestroOnce && (Time.fixedTime - beginTime) > 1f) {
 				maestro.Play ();
 				maestroOnce = false;
 			}
@@ -85,7 +86,7 @@ public class GameManagerEno : MonoBehaviour {
 				beginingOfEnd = false;
 			}
 
-			panel.CrossFadeAlpha (1.0f, 10.0f, false);
+			panel.CrossFadeAlpha (1.0f, 3.0f, false);
 
 
 			Debug.Log ("alpha decreasing :" + panel.canvasRenderer.GetColor().a);
